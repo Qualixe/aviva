@@ -9,17 +9,15 @@
     font-weight: 600;
 }
 
-.community-review-items {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
+.swiper.community-review-slider {
+    padding-bottom: 4px;
 }
 
 .community-review-item {
     position: relative;
     display: block;
     aspect-ratio: 279 / 456;
-    border-radius: 16px;
+    border-radius: 8px;
     overflow: hidden;
     background-color: var(--black);
     border: none;
@@ -347,12 +345,8 @@
         padding: 0 20px;
     }
 
-    .community-review-items {
-        grid-template-columns: repeat(4, minmax(240px, 280px));
-        overflow-x: auto;
-        scroll-snap-type: mandatory;
-        gap: 16px;
-        padding: 0 20px 10px;
+    .swiper.community-review-slider {
+        padding: 0 20px 4px;
     }
 
     /* community-review-section css end */
@@ -361,10 +355,6 @@
 @media only screen and (max-width: 767px) {
 
     /* community-review-section css start */
-    .community-review-items {
-        gap: 10px;
-    }
-
     .community-review-item-text {
         font-size: 13px;
     }
@@ -380,10 +370,8 @@
          font-size: 18px;
     }
 
-    .community-review-items {
-        grid-template-columns: repeat(4, minmax(200px, 280px));
-        gap: 12px;
-        padding: 0 16px 10px;
+    .swiper.community-review-slider {
+        padding: 0 16px 4px;
     }
 
     /* community-review-section css end */

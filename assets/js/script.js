@@ -72,6 +72,29 @@ document.addEventListener("keydown", (e) => {
 });
 // navbar search open js end ---
 
+// search-recommended-slider js start--
+var swiper = new Swiper(".search-recommended-slider", {
+  slidesPerView: 2.3,
+  spaceBetween: 12,
+  grabCursor: true,
+  loop: false,
+  navigation: {
+    nextEl: ".search-recommended-slider-btn-next",
+    prevEl: ".search-recommended-slider-btn-prev",
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 3.3,
+      spaceBetween: 14,
+    },
+    768: {
+      slidesPerView: 4.2,
+      spaceBetween: 16,
+    },
+  },
+});
+// search-recommended-slider js end--
+
 // mobile-menu sidebar js start---
 const mobileMenu = document.querySelector(".mobile-menu-wrap");
 const mobileMenuContainer = document.querySelector(".mobile-menu-container");
@@ -259,13 +282,40 @@ var swiper = new Swiper(".cart-drawer-slider", {
 });
 // cart-drawer slider js end--
 
-// cart-drawer progesss-bar js start--
-const progress = document.querySelector(".progress");
-progress.addEventListener("input", function () {
-  const value = this.value;
-  this.style.background = `linear-gradient(to right, #d55a3c 0%, #422c26 ${value}%,rgb(236 219 216) ${value}%)`;
+// cart-drawer progress countdown js start--
+document.querySelectorAll(".cart-drawer-progress-countdown").forEach((el) => {
+  const hrsEl = el.querySelector(".hrs");
+  const minsEl = el.querySelector(".mins");
+  const secsEl = el.querySelector(".secs");
+  let remaining =
+    (Number(el.dataset.countdownHours) || 0) * 3600 +
+    (Number(el.dataset.countdownMinutes) || 5) * 60;
+
+  const render = () => {
+    const hrs = Math.floor(remaining / 3600);
+    const mins = Math.floor((remaining % 3600) / 60);
+    const secs = remaining % 60;
+    if (hrsEl) hrsEl.textContent = hrs;
+    minsEl.textContent = String(mins).padStart(2, "0");
+    secsEl.textContent = String(secs).padStart(2, "0");
+  };
+
+  render();
+
+  const timer = setInterval(() => {
+    remaining--;
+
+    if (remaining <= 0) {
+      remaining = 0;
+      render();
+      clearInterval(timer);
+      return;
+    }
+
+    render();
+  }, 1000);
 });
-// cart-drawer progesss-bar js end--
+// cart-drawer progress countdown js end--
 
 // hero slider js start--
 var swiper = new Swiper(".hero-slider", {
@@ -310,6 +360,37 @@ var swiper = new Swiper(".category-slider", {
 });
 // category js end--
 
+// category-grid-slider js start--
+var swiper = new Swiper(".category-grid-slider", {
+  slidesPerView: 1.8,
+  spaceBetween: 12,
+  grabCursor: true,
+  loop: false,
+  navigation: {
+    nextEl: ".category-grid-slider-btn-next",
+    prevEl: ".category-grid-slider-btn-prev",
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 2.3,
+      spaceBetween: 14,
+    },
+    768: {
+      slidesPerView: 3.3,
+      spaceBetween: 16,
+    },
+    993: {
+      slidesPerView: 4.3,
+      spaceBetween: 18,
+    },
+    1200: {
+      slidesPerView: 6,
+      spaceBetween: 20,
+    },
+  },
+});
+// category-grid-slider js end--
+
 // card slider js start--
 var swiper = new Swiper(".card-slider", {
   slidesPerView: 6,
@@ -317,7 +398,6 @@ var swiper = new Swiper(".card-slider", {
   spaceBetween: 16,
   loop: true,
   speed: 500,
-  autoplay: false,
   // autoplay: {
   //   delay: 3500,
   //   disableOnInteraction: false,
@@ -466,6 +546,41 @@ var swiper = new Swiper(".shop-by-brand-slider", {
   },
 });
 // shop-by-brand-slider js end--
+
+// community-review-slider js start--
+var swiper = new Swiper(".community-review-slider", {
+  slidesPerView: 5.2,
+  spaceBetween: 20,
+  grabCursor: true,
+  loop: false,
+  navigation: {
+    nextEl: ".community-review-slider-btn-next",
+    prevEl: ".community-review-slider-btn-prev",
+  },
+  breakpoints: {
+    1: {
+      slidesPerView: 1.8,
+      spaceBetween: 10,
+    },
+    576: {
+      slidesPerView: 2.3,
+      spaceBetween: 12,
+    },
+    768: {
+      slidesPerView: 3.3,
+      spaceBetween: 16,
+    },
+    993: {
+      slidesPerView: 4.3,
+      spaceBetween: 20,
+    },
+    1200: {
+      slidesPerView: 5.2,
+      spaceBetween: 20,
+    },
+  },
+});
+// community-review-slider js end--
 
 // community-review popup js start--
 (function () {

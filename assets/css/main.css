@@ -370,103 +370,138 @@ button {
 }
 
 .cart-drawer-progress {
-    border: 1px solid var(--item-bg);
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 3px 12px rgb(213 90 60 / 10%);
     margin: 16px 16px 0;
+    padding: 14px 14px 12px;
+    border-radius: 12px;
+    border: 1px solid var(--item-bg);
     background: var(--item-bg);
 }
 
-.cart-drawer-progress-content {
-    padding: 10px;
+.cart-drawer-progress-top {
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 8px;
 }
 
-.cart-drawer-progress-content .icon {
-    width: 32px;
-    height: 32px;
-    background: var(--brand-color);
-    border-radius: 8px;
-    overflow: hidden;
+.cart-drawer-progress-offer-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.cart-drawer-progress-countdown {
     display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.cart-drawer-progress-countdown-box {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
+    padding: 2px 6px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background: var(--white);
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--black);
+    line-height: 16px;
 }
 
-.cart-drawer-progress-content .icon svg {
-    width: 22px;
-    height: 22px;
-    stroke: var(--white);
+.cart-drawer-progress-countdown .sep {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--black);
 }
 
-.cart-drawer-progress-content .content .title {
-    font-size: 13px;
-    line-height: 17px;
-    text-transform: capitalize;
-    color: var(--muted);
-}
-
-.cart-drawer-progress-content .content .text {
+.cart-drawer-progress-message {
+    display: flex;
+    align-items: center;
+    gap: 6px;
     font-size: 12px;
     line-height: 16px;
-    color: var(--muted);
-    margin-top: 3px;
+    color: var(--black);
 }
 
-.cart-drawer-progress-content .content .text strong {
+.cart-drawer-progress-message .icon {
+    font-size: 15px;
+    line-height: 1;
+}
+
+.cart-drawer-progress-message strong {
     color: var(--brand-color);
     font-weight: 700;
 }
 
-.cart-drawer-progress .progress {
-    background: linear-gradient(to right, #d55a3c 0%, #422c26 60%, rgb(236 219 216) 60%, rgb(236 219 216) 100%);
+.cart-drawer-progress-track-wrap {
+    margin: 12px 2px 0;
+}
+
+.cart-drawer-progress-track {
     height: 5px;
-    width: 100%;
-    transition: background 450ms ease-in;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    display: block;
-    cursor: not-allowed;
-    border: none;
+    border-radius: 3px;
+    background: var(--border-color2);
+    overflow: hidden;
 }
 
-.cart-drawer-progress .progress::-webkit-slider-thumb {
-    position: relative;
-    top: -14px;
-    width: 35px;
-    height: 35px;
-    appearance: none;
-    -webkit-appearance: none;
-    cursor: default;
-    background-image: url('../images/progress-bar-icon.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    cursor: not-allowed;
+.cart-drawer-progress-track-fill {
+    height: 100%;
+    border-radius: 3px;
+    background: var(--brand-color);
+    transition: width 450ms ease-in;
 }
 
-.cart-drawer-progress .progress::-moz-range-thumb {
-    position: relative;
-    top: -14px;
-    width: 35px;
-    height: 35px;
-    appearance: none;
-    -moz-appearance: none;
-    cursor: default;
-    background-image: url('../images/progress-bar-icon.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    cursor: not-allowed;
+.cart-drawer-progress-milestones {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin: -13px 2px 0;
+}
+
+.cart-drawer-progress-milestone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 0;
+}
+
+.cart-drawer-progress-milestone .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    margin-bottom: 6px;
+    border-radius: 50%;
+    background: var(--white);
+    border: 2px solid var(--border-color2);
+    font-size: 11px;
+    flex-shrink: 0;
+}
+
+.cart-drawer-progress-milestone.reached .icon {
+    background: var(--brand-color);
+    border-color: var(--brand-color);
+}
+
+.cart-drawer-progress-milestone .amount {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--black);
+    white-space: nowrap;
+}
+
+.cart-drawer-progress-milestone .name {
+    font-size: 10px;
+    color: var(--muted);
+    white-space: nowrap;
 }
 
 .cart-drawer-content {
     width: 100%;
-    height: calc(100dvh - 236px);
+    height: calc(100dvh - 323px);
     overflow-y: auto;
     scrollbar-width: thin;
     padding: 16px;
@@ -487,7 +522,7 @@ button {
     gap: 10px;
     align-items: center;
     padding: 10px;
-    box-shadow: 0 3px 12px rgb(213 90 60 / 10%);
+    box-shadow: 0 3px 12px rgb(17 79 87 / 10%);
     border-radius: 8px;
     overflow: hidden;
 }
@@ -576,7 +611,7 @@ button {
 }
 
 .cart-drawer-item-qty-btn:hover {
-    background: var(--border-color);
+    background: var(--brand-color);
     color: var(--white);
 }
 
