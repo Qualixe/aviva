@@ -751,16 +751,12 @@ document.addEventListener("DOMContentLoaded", () => {
         const open = btn.classList.contains("filter-open-btn");
 
         sidebar?.classList.toggle("active", open);
-        document.body.classList.toggle("active", open);
       });
     });
 
-  // Accordion
+  // Accordion (closed by default)
   document.querySelectorAll(".accordion-toggle-btn").forEach((btn) => {
     const content = btn.nextElementSibling;
-
-    content.style.maxHeight = `${content.scrollHeight}px`;
-    btn.parentElement.classList.add("active");
 
     btn.addEventListener("click", () => {
       btn.parentElement.classList.toggle("active");
@@ -769,6 +765,50 @@ document.addEventListener("DOMContentLoaded", () => {
         ? null
         : `${content.scrollHeight}px`;
     });
+  });
+
+  // Price range slider
+  document.querySelectorAll(".price-range-wrap").forEach((wrap) => {
+    const minInput = wrap.querySelector(".price-range-input-min");
+    const maxInput = wrap.querySelector(".price-range-input-max");
+    const fill = wrap.querySelector(".price-range-track-fill");
+    const minValueEl = wrap.querySelector(".price-range-value-min");
+    const maxValueEl = wrap.querySelector(".price-range-value-max");
+
+    if (!minInput || !maxInput) return;
+
+    const sliderMin = Number(minInput.min);
+    const sliderRange = Number(minInput.max) - sliderMin;
+
+    const render = () => {
+      const minVal = Number(minInput.value);
+      const maxVal = Number(maxInput.value);
+
+      const minPercent = ((minVal - sliderMin) / sliderRange) * 100;
+      const maxPercent = ((maxVal - sliderMin) / sliderRange) * 100;
+
+      fill.style.left = `${minPercent}%`;
+      fill.style.width = `${maxPercent - minPercent}%`;
+
+      minValueEl.textContent = minVal;
+      maxValueEl.textContent = maxVal;
+    };
+
+    minInput.addEventListener("input", () => {
+      if (Number(minInput.value) > Number(maxInput.value)) {
+        minInput.value = maxInput.value;
+      }
+      render();
+    });
+
+    maxInput.addEventListener("input", () => {
+      if (Number(maxInput.value) < Number(minInput.value)) {
+        maxInput.value = minInput.value;
+      }
+      render();
+    });
+
+    render();
   });
 });
 // collection filter js end---

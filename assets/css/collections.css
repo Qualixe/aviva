@@ -1,6 +1,6 @@
 /* collection section css start */
 .collection-section {
-    padding: 24px 0 32px;
+    padding: 0 0 32px;
 }
 
 .collection-filter {
@@ -8,13 +8,13 @@
     z-index: 99999;
     height: 100vh;
     top: 0;
-    left: -100%;
+    right: -100%;
     width: 100%;
     transition: all ease .3s;
 }
 
 .collection-filter.active {
-    left: 0;
+    right: 0;
 }
 
 .collection-content {
@@ -26,11 +26,24 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 0 20px 0;
+    position: sticky;
+    top: 140px;
+    z-index: 6;
+    background: var(--white);
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border-color);
 }
 
+.collection-top .collection-heading {
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: var(--brand-color);
+}
+
+.collection-filter-short,
 .collection-filter-btn {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     gap: 20px;
 }
@@ -51,7 +64,13 @@
 }
 
 .filter-open-btn svg {
-    width: 16px;
+    width: 18px;
+    height: 18px;
+}
+
+.filter-open-btn svg {
+    width: 18px;
+    height: 18px;
 }
 
 .collection-product-count {
@@ -105,6 +124,8 @@
     height: 100dvh;
     border-radius: 0;
     padding: 20px;
+    float: right;
+    transition: all ease .3s;
 }
 
 .filter-sidebar-heading {
@@ -112,9 +133,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 10px 16px 10px;
-    border-bottom: 1px solid var(--border-color2);
+    border-bottom: 1px solid var(--border-color);
     font-family: var(--paragraph-font);
-    border-radius: 10px;
     font-weight: 600 !important;
 }
 
@@ -155,12 +175,10 @@
 .filter-accordion-items {
     display: flex;
     flex-direction: column;
-    gap: 16px;
 }
 
 .filter-accordion-item {
-    border-bottom: 1px solid var(--border-color2);
-    border-radius: 0 0 10px 10px;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .filter-accordion-item .item-title-wrapper {
@@ -168,15 +186,13 @@
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    padding: 10px 10px;
-    /* border-top: 1px solid var(--border-color2); */
-    border-radius: 10px;
+    padding: 20px 10px;
 }
 
 .filter-accordion-item .item-title-wrapper .item-title {
     text-transform: capitalize;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 400;
     user-select: none;
     font-family: var(--paragraph-font);
 }
@@ -186,13 +202,13 @@
 }
 
 .filter-accordion-item .item-title-wrapper .icon svg {
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     transition: all ease .3s;
 }
 
 .filter-accordion-item .item-title-wrapper .icon svg path {
-    fill: var(--black);
+    fill: var(--muted);
 }
 
 .filter-accordion-item.active .item-title-wrapper .icon svg {
@@ -205,9 +221,8 @@
     transition: max-height 0.35s ease;
 }
 
-.filter-price-range-wrap,
 .filter-options-wrapper {
-    padding: 16px 10px;
+    padding: 0 10px 20px 10px;
 }
 
 /* .filter-options-heading {
@@ -280,19 +295,6 @@
     overflow: hidden;
 }
 
-/* .filter-option input:checked+label:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 3px;
-    left: 8px;
-    width: 3px;
-    height: 9px;
-    border: solid var(--brand-color);
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
-} */
-
 .filter-option input:checked+label:after {
     content: '';
     display: block;
@@ -326,28 +328,103 @@
     background-color: #008000;
 }
 
-.filter-price-range-wrap {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+.price-range-wrap {
+    padding: 4px 6px 20px;
+}
+
+.price-range-slider {
+    position: relative;
+    height: 14px;
+    display: flex;
     align-items: center;
 }
 
-.price-range-field input {
-    border: 1px solid var(--border-color2);
-    height: 38px;
+.price-range-track {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--border-color);
+}
+
+.price-range-track-fill {
+    position: absolute;
+    height: 3px;
+    background: var(--brand-color);
+}
+
+.price-range-input {
+    position: absolute;
+    left: 0;
     width: 100%;
-    padding: 0 10px;
+    margin: 0;
+    background: transparent;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    pointer-events: none;
+}
+
+.price-range-input::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    height: 3px;
+    background: transparent;
+}
+
+.price-range-input::-moz-range-track {
+    height: 3px;
+    background: transparent;
+    border: none;
+}
+
+.price-range-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    pointer-events: auto;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--black);
+    cursor: pointer;
+    margin-top: -6px;
+}
+
+.price-range-input::-moz-range-thumb {
+    pointer-events: auto;
+    width: 14px;
+    height: 14px;
+    border: none;
+    border-radius: 50%;
+    background: var(--black);
+    cursor: pointer;
+}
+
+.price-range-values {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.price-range-field {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex: 1;
+    border: 1px solid var(--border-color2);
+    border-radius: 5px;
+    padding: 8px 10px;
     font-size: 14px;
     color: var(--muted);
 }
 
-.price-range-field input::placeholder {
-    color: var(--muted);
+.price-range-value {
+    font-weight: 500;
+    color: var(--black);
 }
 
-.price-range-field input:focus {
-    border-color: var(--black);
+.price-range-sep {
+    font-size: 13px;
+    color: var(--muted);
 }
 
 /* collection filter css end */
@@ -363,6 +440,10 @@
 @media only screen and (max-width: 992px) {
 
     /* colection section css start */
+    .collection-top {
+        top: 72px;
+    }
+
     .product-items {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -373,6 +454,27 @@
 @media only screen and (max-width: 767px) {
 
     /* colection section css start */
+    .collection-top {
+        flex-direction: column;
+        gap: 0;
+        padding: 20px 0 0 0;
+        top: 24px;
+    }
+
+    .collection-filter-btn {
+        width: 100%;
+        justify-content: space-between;
+        padding: 16px 0;
+    }
+
+    .collection-product-count {
+        order: 2;
+    }
+
+    .filter-select-field {
+        order: 1;
+    }
+
     .product-items {
         column-gap: 16px;
         row-gap: 24px;
@@ -384,11 +486,25 @@
 @media only screen and (max-width: 575px) {
 
     /* colection section css start */
+    .collection-top {
+        margin: 0 0 12px 0;
+        top: 18px;
+    }
+
+    .collection-filter-btn {
+        padding: 12px 0;
+    }
+
+    .collection-top .collection-heading {
+        font-size: 18px;
+    }
+
     .product-items {
         column-gap: 5px;
         row-gap: 16px;
     }
 
+    .collection-filter-short,
     .collection-filter-btn {
         gap: 10px;
     }

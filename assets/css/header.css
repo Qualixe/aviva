@@ -386,6 +386,11 @@
     border-top: 1px solid var(--border-color2);
     align-items: center;
     padding: 12px 0;
+    transition: all ease .3s;
+}
+
+.search-result-item:hover {
+    background: var(--item-bg3);
 }
 
 .search-result-item:first-child {
