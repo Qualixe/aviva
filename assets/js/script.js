@@ -48,14 +48,12 @@ document.addEventListener("click", function (e) {
     e.target.closest(".search-bar-window-cls-btn")
   ) {
     document.querySelector(".search-bar-wrap")?.classList.remove("active");
-    document.body.classList.remove("active");
     return;
   }
 
   // Open Search
   if (e.target.closest(".navbar-search-open-btn")) {
     document.querySelector(".search-bar-wrap")?.classList.add("active");
-    document.body.classList.add("active");
   }
 });
 
@@ -814,76 +812,323 @@ document.addEventListener("DOMContentLoaded", () => {
 // collection filter js end---
 
 // product-slider js start---
-var swiper = new Swiper(".product-slider-thumb", {
-  direction: "vertical",
-  loop: false,
-  spaceBetween: 20,
-  slidesPerView: 5,
-  freeMode: true,
-  mousewheel: true,
-  breakpoints: {
-    // when window width is >= 320px
-    1: {
-      direction: "horizontal",
-      spaceBetween: 10,
-      slidesPerView: 4,
+(() => {
+  const thumbs = [...document.querySelectorAll(".product-slider-thumb-item")];
+  const items = [...document.querySelectorAll(".product-slider-image-item")];
+  const container = document.querySelector(".product-slider-images");
+
+  if (!thumbs.length || !items.length) return;
+
+  let isClickScroll = false;
+  let scrollTimer;
+
+  const isMobileLayout = () => window.matchMedia("(max-width: 992px)").matches;
+
+  const positionMobileItems = (id, animate) => {
+    if (!isMobileLayout()) return;
+    const activeIndex = items.findIndex((item) => item.id === id);
+    if (activeIndex < 0) return;
+    items.forEach((item, i) => {
+      item.style.transition = animate ? "transform .3s ease" : "none";
+      item.style.transform = `translateX(${(i - activeIndex) * 100}%)`;
+    });
+  };
+
+  const setActive = (id, animateMobile = true) => {
+    let activeThumb = null;
+
+    thumbs.forEach((thumb) => {
+      const isActive = thumb.getAttribute("href") === `#${id}`;
+      thumb.classList.toggle("active", isActive);
+      if (isActive) activeThumb = thumb;
+    });
+
+    items.forEach((item) => item.classList.toggle("active", item.id === id));
+    positionMobileItems(id, animateMobile);
+
+    if (isMobileLayout()) {
+      activeThumb?.scrollIntoView({ behavior: "smooth", inline: "nearest", block: "nearest" });
+    }
+  };
+
+  thumbs.forEach((thumb) => {
+    thumb.addEventListener("click", (e) => {
+      e.preventDefault();
+      const targetId = thumb.getAttribute("href").slice(1);
+      const target = document.getElementById(targetId);
+      if (!target) return;
+
+      isClickScroll = true;
+      setActive(targetId);
+      window.scrollTo({
+        top: target.offsetTop + (isMobileLayout() ? 0 : 10),
+        behavior: "smooth",
+      });
+
+      clearTimeout(scrollTimer);
+      scrollTimer = setTimeout(() => {
+        isClickScroll = false;
+      }, 1000);
+    });
+  });
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      if (isClickScroll || isMobileLayout()) return;
+      const visible = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (visible) setActive(visible.target.id);
     },
-    // when window width is >= 576px
-    576: {
-      direction: "horizontal",
-      spaceBetween: 20,
-      slidesPerView: 5,
-    },
-    // when window width is >= 767px
-    768: {
-      direction: "vertical",
-      spaceBetween: 20,
-      slidesPerView: 5,
-    },
-    // when window width is >= 767px
-    993: {
-      direction: "vertical",
-    },
-  },
-});
-var swiper2 = new Swiper(".product-slider", {
-  loop: true,
-  autoHeight: true,
-  spaceBetween: 10,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".product-slider-pagination",
-    clickable: true,
-  },
-  thumbs: {
-    swiper: swiper,
-  },
-});
+    { rootMargin: "-20% 0px -60% 0px", threshold: [0.15, 0.3, 0.5, 0.75] }
+  );
+
+  items.forEach((item) => observer.observe(item));
+
+  // initial mobile position (no animation on first paint)
+  const initialActive = items.find((item) => item.classList.contains("active")) || items[0];
+  positionMobileItems(initialActive.id, false);
+
+  // mobile swipe/drag to move between images
+  if (container) {
+    let dragging = false;
+    let startX = 0;
+    let deltaX = 0;
+    let containerWidth = 0;
+
+    const getActiveIndex = () => items.findIndex((item) => item.classList.contains("active"));
+
+    container.addEventListener(
+      "touchstart",
+      (e) => {
+        if (!isMobileLayout()) return;
+        dragging = true;
+        startX = e.touches[0].clientX;
+        deltaX = 0;
+        containerWidth = container.clientWidth || 1;
+      },
+      { passive: true }
+    );
+
+    container.addEventListener(
+      "touchmove",
+      (e) => {
+        if (!dragging) return;
+        deltaX = e.touches[0].clientX - startX;
+        const activeIndex = getActiveIndex();
+        items.forEach((item, i) => {
+          item.style.transition = "none";
+          const basePercent = (i - activeIndex) * 100;
+          const dragPercent = (deltaX / containerWidth) * 100;
+          item.style.transform = `translateX(${basePercent + dragPercent}%)`;
+        });
+      },
+      { passive: true }
+    );
+
+    container.addEventListener("touchend", () => {
+      if (!dragging) return;
+      dragging = false;
+
+      const activeIndex = getActiveIndex();
+      const threshold = containerWidth * 0.18;
+      let nextIndex = activeIndex;
+
+      if (deltaX < -threshold && activeIndex < items.length - 1) nextIndex = activeIndex + 1;
+      else if (deltaX > threshold && activeIndex > 0) nextIndex = activeIndex - 1;
+
+      setActive(items[nextIndex].id);
+    });
+
+    window.addEventListener("resize", () => {
+      const activeIndex = getActiveIndex();
+      if (activeIndex >= 0) positionMobileItems(items[activeIndex].id, false);
+    });
+  }
+})();
 // product-slider js end---
 
-// Product Slider Modal
-const productModal = document.querySelector(".product-slider-modal");
+// product-slider zoom-btn follow cursor js start--
+(() => {
+  const area = document.querySelector(".product-slider-images");
+  const zoomBtn = document.querySelector(".product-slider-zoom-btn");
+  if (!area || !zoomBtn) return;
+  if (!window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
 
-document
-  .querySelector(".product-slider .swiper-wrapper")
-  ?.addEventListener("click", (e) => {
-    e.stopPropagation();
-    productModal?.classList.add("active");
+  area.addEventListener("mousemove", (e) => {
+    if (!e.target.closest(".product-slider-image-item")) {
+      zoomBtn.classList.remove("is-following");
+      return;
+    }
+
+    zoomBtn.classList.add("is-following");
+    zoomBtn.style.left = `${e.clientX}px`;
+    zoomBtn.style.top = `${e.clientY}px`;
   });
 
-document
-  .querySelector(".product-slider-modal-close")
-  ?.addEventListener("click", (e) => {
-    e.stopPropagation();
-    productModal?.classList.remove("active");
+  area.addEventListener("mouseleave", () => {
+    zoomBtn.classList.remove("is-following");
+    zoomBtn.style.left = "";
+    zoomBtn.style.top = "";
+  });
+})();
+// product-slider zoom-btn follow cursor js end--
+
+// product-zoom-popup js start--
+(() => {
+  const popup = document.querySelector(".product-zoom-popup");
+  const fullview = popup?.querySelector(".product-zoom-popup-fullview");
+  const fullviewImg = fullview?.querySelector("img");
+
+  if (!popup) return;
+
+  const closeFullview = () => {
+    fullview?.classList.remove("active", "is-dragging");
+    if (fullviewImg) {
+      fullviewImg.style.transform = "";
+      fullviewImg.style.transformOrigin = "";
+    }
+    if (zoomSwiper) zoomSwiper.allowTouchMove = true;
+  };
+
+  var zoomSwiper = new Swiper(".product-zoom-popup-slider", {
+    slidesPerView: 1,
+    speed: 300,
+    on: {
+      slideChange: closeFullview,
+    },
   });
 
-productModal?.addEventListener("click", () => {
-  productModal.classList.remove("active");
-});
+  const open = (index) => {
+    zoomSwiper.slideTo(index, 0);
+    popup.classList.add("active");
+  };
+
+  const close = () => {
+    popup.classList.remove("active");
+    closeFullview();
+  };
+
+  document.querySelectorAll(".product-slider-image-item").forEach((item, index) => {
+    item.addEventListener("click", (e) => {
+      e.stopPropagation();
+      open(index);
+    });
+  });
+
+  popup.querySelector(".product-zoom-popup-close")?.addEventListener("click", (e) => {
+    e.stopPropagation();
+    close();
+  });
+
+  popup.querySelector(".product-zoom-popup-prev")?.addEventListener("click", (e) => {
+    e.stopPropagation();
+    zoomSwiper.slidePrev();
+  });
+
+  popup.querySelector(".product-zoom-popup-next")?.addEventListener("click", (e) => {
+    e.stopPropagation();
+    zoomSwiper.slideNext();
+  });
+
+  // click any slide image to zoom in full-screen, drag to pan while zoomed
+  const ZOOM_SCALE = 2.2;
+
+  if (fullview && fullviewImg) {
+    let panX = 0;
+    let panY = 0;
+    let panXMin = 0;
+    let panXMax = 0;
+    let panYMin = 0;
+    let panYMax = 0;
+    let dragging = false;
+    let moved = false;
+    let startX = 0;
+    let startY = 0;
+    let startPanX = 0;
+    let startPanY = 0;
+
+    const applyPan = () => {
+      fullviewImg.style.transform = `scale(${ZOOM_SCALE}) translate(${panX}px, ${panY}px)`;
+    };
+
+    const openFullview = (src, clientX, clientY) => {
+      const rect = fullview.getBoundingClientRect();
+      const originXPx = clientX - rect.left;
+      const originYPx = clientY - rect.top;
+
+      fullviewImg.src = src;
+      fullviewImg.style.transformOrigin = `${(originXPx / rect.width) * 100}% ${(originYPx / rect.height) * 100}%`;
+      panX = 0;
+      panY = 0;
+
+      // clamp pan so the scaled image can never be dragged past its own edges
+      const k = (ZOOM_SCALE - 1) / ZOOM_SCALE;
+      panXMax = originXPx * k;
+      panXMin = -(rect.width - originXPx) * k;
+      panYMax = originYPx * k;
+      panYMin = -(rect.height - originYPx) * k;
+
+      applyPan();
+      fullview.classList.add("active");
+      zoomSwiper.allowTouchMove = false;
+    };
+
+    popup.querySelectorAll(".product-zoom-popup-image").forEach((wrap) => {
+      wrap.addEventListener("click", (e) => {
+        e.stopPropagation();
+        openFullview(wrap.querySelector("img").src, e.clientX, e.clientY);
+      });
+    });
+
+    fullview.addEventListener("mousedown", (e) => {
+      dragging = true;
+      moved = false;
+      startX = e.clientX;
+      startY = e.clientY;
+      startPanX = panX;
+      startPanY = panY;
+      fullview.classList.add("is-dragging");
+      e.preventDefault();
+    });
+
+    window.addEventListener("mousemove", (e) => {
+      if (!dragging) return;
+      const dx = e.clientX - startX;
+      const dy = e.clientY - startY;
+      if (Math.abs(dx) > 4 || Math.abs(dy) > 4) moved = true;
+      panX = Math.min(panXMax, Math.max(panXMin, startPanX + dx));
+      panY = Math.min(panYMax, Math.max(panYMin, startPanY + dy));
+      applyPan();
+    });
+
+    window.addEventListener("mouseup", () => {
+      if (!dragging) return;
+      dragging = false;
+      fullview.classList.remove("is-dragging");
+    });
+
+    fullview.addEventListener("click", (e) => {
+      e.stopPropagation();
+      if (moved) {
+        moved = false;
+        return;
+      }
+      closeFullview();
+    });
+  }
+
+  document.addEventListener("keydown", (e) => {
+    if (!popup.classList.contains("active")) return;
+    if (e.key === "Escape") {
+      if (fullview?.classList.contains("active")) closeFullview();
+      else close();
+    }
+    if (e.key === "ArrowLeft") zoomSwiper.slidePrev();
+    if (e.key === "ArrowRight") zoomSwiper.slideNext();
+  });
+})();
+// product-zoom-popup js end--
 
 // Size Chart Sidebar
 const sizeSidebar = document.querySelector(".size-chart-sidebar");

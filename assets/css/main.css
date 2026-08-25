@@ -479,6 +479,7 @@ button {
     border: 2px solid var(--border-color2);
     font-size: 11px;
     flex-shrink: 0;
+    line-height: 1;
 }
 
 .cart-drawer-progress-milestone.reached .icon {
