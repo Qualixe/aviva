@@ -19,6 +19,7 @@
     color: var(--brand-color);
     text-wrap-mode: nowrap;
     text-decoration: underline;
+    text-transform: capitalize;
 }
 
 .swiper.card-slider .swiper-wrapper {

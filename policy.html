@@ -4,33 +4,21 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>aviva | Privacy & Policy</title>
+	<title>Aviva | Privacy & Policy</title>
 	<!-- css link start -->
-	<link rel="icon" href="./assets/images/aviva-favicon.svg" type="image/x-icon">
+	<link rel="icon" href="./assets/images/store-logo.png" type="image/x-icon">
 	<link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
-	<link rel="stylesheet" href="./assets/css/app-menu-section.css">
 	<link rel="stylesheet" href="./assets/css/footer.css">
 	<link rel="stylesheet" href="./assets/css/card.css">
 	<link rel="stylesheet" href="./assets/css/policy-section.css">
 	<link rel="stylesheet" href="./assets/css/header.css">
-	<link rel="stylesheet" href="./assets/css/announcebar-section.css">
 	<link rel="stylesheet" href="./assets/css/main.css">
 	<!-- css link end -->
 </head>
 
 <body>
-	<!-- announcebar-section start -->
-	<section class="announcebar-section">
-		<div class="container">
-			<div class="announcebar-text">
-				<p><a href="#!">get Extra 500tk off on first order</a></p>
-			</div>
-		</div>
-	</section>
-	<!-- announcebar-section end -->
-
 	<!-- header start -->
-	<header class="header home-nav-active">
+	<header class="header">
 		<div class="container">
 			<nav class="navbar">
 				<div class="navbar-left">
@@ -40,31 +28,47 @@
 								stroke-linejoin="round"></path>
 						</svg>
 					</button>
+					<button class="navbar-icon navbar-search-open-btn">
+						<svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+							<path
+								d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z"
+								stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="M17.5 17.5L13.875 13.875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+								stroke-linejoin="round"></path>
+						</svg>
+					</button>
 					<div class="navbar-logo">
 						<a href="index.html">
-							<img src="./assets/images/aviva-logo.png" alt="aviva-logo">
+							<img src="./assets/images/store-logo.png" alt="store-logo.png">
 						</a>
 					</div>
 				</div>
-				<div class="navbar-search">
-					<button class="search-open navbar-search-open-btn">
-						<span class="icon">
-							<svg viewBox="0 0 20 20" fill="none">
-								<circle cx="9" cy="9" r="5.5" stroke="currentColor" stroke-width="1.6"></circle>
-								<path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
-							</svg>
-						</span>
-						<span class="text p">
-							search for
-							<span class="search-roller">
-								<span class="search-roller-track">
-									<span>smart phone</span>
-									<span>home decoration</span>
-									<span>gadgets</span>
+				<div class="navbar-center">
+					<div class="navbar-search">
+						<button class="search-open navbar-search-open-btn">
+							<span class="icon">
+								<svg viewBox="0 0 20 20" fill="none">
+									<circle cx="9" cy="9" r="5.5" stroke="currentColor" stroke-width="1.6"></circle>
+									<path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+								</svg>
+							</span>
+							<span class="text p">
+								search for
+								<span class="search-roller">
+									<span class="search-roller-track">
+										<span>smart phone</span>
+										<span>home decoration</span>
+										<span>gadgets</span>
+									</span>
 								</span>
 							</span>
-						</span>
-					</button>
+						</button>
+					</div>
+					<div class="navbar-logo">
+						<a href="index.html">
+							<img src="./assets/images/store-logo.png" alt="store-logo.png">
+						</a>
+					</div>
 				</div>
 				<!-- search-bar popup start -->
 				<div class="search-bar-wrap">
@@ -153,56 +157,194 @@
 										</div>
 									</div>
 									<div class="search-history-item">
-										<p class="search-history-item-title">Explore best category</p>
-										<div class="search-categories">
-											<a href="#!" class="search-category">
-												<div class="search-category-img">
-													<img src="./assets/images/search-cetagory-img1.webp" alt="search-cetagory-img1.webp">
+										<p class="search-history-item-title">Recommended for you</p>
+										<div class="swiper search-recommended-slider">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<div class="product-card card_hover">
+														<div class="card-image-wrap">
+															<div class="card-img">
+																<a class="main-img" href="product.html">
+																	<img class="card_img" src="./assets/images/product-img1.webp"
+																		alt="Taj Guldasta Office Backpack">
+																</a>
+																<a class="hover-img" href="product.html">
+																	<img class="card_hover_img" src="./assets/images/product-img2.webp"
+																		alt="Taj Guldasta Office Backpack">
+																</a>
+															</div>
+														</div>
+														<div class="card-content">
+															<div class="card-title-wrap">
+																<a href="product.html" class="card-title">Taj Guldasta Office Backpack</a>
+															</div>
+															<div class="card-footer">
+																<div class="card-price-wrap">
+																	<p class="latest-price">৳1,870</p>
+																	<p class="previous-price">৳2,200</p>
+																</div>
+																<div class="card-btn">
+																	<a href="#!" class="btn">add</a>
+																</div>
+															</div>
+														</div>
+													</div>
 												</div>
-												<div class="search-category-content">
-													<p class="title">Bedsheets</p>
+												<div class="swiper-slide">
+													<div class="product-card card_hover">
+														<div class="card-image-wrap">
+															<div class="card-img">
+																<a class="main-img" href="product.html">
+																	<img class="card_img" src="./assets/images/product-img2.webp"
+																		alt="FloMotif Women's Office Bag">
+																</a>
+																<a class="hover-img" href="product.html">
+																	<img class="card_hover_img" src="./assets/images/product-img3.webp"
+																		alt="FloMotif Women's Office Bag">
+																</a>
+															</div>
+														</div>
+														<div class="card-content">
+															<div class="card-title-wrap">
+																<a href="product.html" class="card-title">FloMotif Women's Office Bag</a>
+															</div>
+															<div class="card-footer">
+																<div class="card-price-wrap">
+																	<p class="latest-price">৳1,670</p>
+																	<p class="previous-price">৳1,800</p>
+																</div>
+																<div class="card-btn">
+																	<a href="#!" class="btn">add</a>
+																</div>
+															</div>
+														</div>
+													</div>
 												</div>
-											</a>
-											<a href="#!" class="search-category">
-												<div class="search-category-img">
-													<img src="./assets/images/search-cetagory-img1.webp" alt="search-cetagory-img1.webp">
+												<div class="swiper-slide">
+													<div class="product-card card_hover">
+														<div class="card-image-wrap">
+															<div class="card-img">
+																<a class="main-img" href="product.html">
+																	<img class="card_img" src="./assets/images/product-img3.webp"
+																		alt="Rhea Kapoor Office Bag - Kashmir Blooms">
+																</a>
+																<a class="hover-img" href="product.html">
+																	<img class="card_hover_img" src="./assets/images/product-img4.webp"
+																		alt="Rhea Kapoor Office Bag - Kashmir Blooms">
+																</a>
+															</div>
+														</div>
+														<div class="card-content">
+															<div class="card-title-wrap">
+																<a href="product.html" class="card-title">Rhea Kapoor Office Bag - Kashmir
+																	Blooms</a>
+															</div>
+															<div class="card-footer">
+																<div class="card-price-wrap">
+																	<p class="latest-price">৳1,870</p>
+																	<p class="previous-price">৳2,200</p>
+																</div>
+																<div class="card-btn">
+																	<a href="#!" class="btn">add</a>
+																</div>
+															</div>
+														</div>
+													</div>
 												</div>
-												<div class="search-category-content">
-													<p class="title">Bedsheets</p>
+												<div class="swiper-slide">
+													<div class="product-card card_hover">
+														<div class="card-image-wrap">
+															<div class="card-img">
+																<a class="main-img" href="product.html">
+																	<img class="card_img" src="./assets/images/product-img4.webp"
+																		alt="Bidri Kaiser Statement Office Bag">
+																</a>
+																<a class="hover-img" href="product.html">
+																	<img class="card_hover_img" src="./assets/images/product-img5.webp"
+																		alt="Bidri Kaiser Statement Office Bag">
+																</a>
+															</div>
+														</div>
+														<div class="card-content">
+															<div class="card-title-wrap">
+																<a href="product.html" class="card-title">Bidri Kaiser Statement Office
+																	Bag</a>
+															</div>
+															<div class="card-footer">
+																<div class="card-price-wrap">
+																	<p class="latest-price">৳1,070</p>
+																	<p class="previous-price">৳1,200</p>
+																</div>
+																<div class="card-btn">
+																	<a href="#!" class="btn">add</a>
+																</div>
+															</div>
+														</div>
+													</div>
 												</div>
-											</a>
-											<a href="#!" class="search-category">
-												<div class="search-category-img">
-													<img src="./assets/images/search-cetagory-img1.webp" alt="search-cetagory-img1.webp">
+												<div class="swiper-slide">
+													<div class="product-card card_hover">
+														<div class="card-image-wrap">
+															<div class="card-img">
+																<a class="main-img" href="product.html">
+																	<img class="card_img" src="./assets/images/product-img5.webp"
+																		alt="Ira Handbag - Lattice Lace">
+																</a>
+																<a class="hover-img" href="product.html">
+																	<img class="card_hover_img" src="./assets/images/product-img6.webp"
+																		alt="Ira Handbag - Lattice Lace">
+																</a>
+															</div>
+														</div>
+														<div class="card-content">
+															<div class="card-title-wrap">
+																<a href="product.html" class="card-title">Ira Handbag - Lattice Lace</a>
+															</div>
+															<div class="card-footer">
+																<div class="card-price-wrap">
+																	<p class="latest-price">৳870</p>
+																	<p class="previous-price">৳900</p>
+																</div>
+																<div class="card-btn">
+																	<a href="#!" class="btn">add</a>
+																</div>
+															</div>
+														</div>
+													</div>
 												</div>
-												<div class="search-category-content">
-													<p class="title">Bedsheets</p>
+												<div class="swiper-slide">
+													<div class="product-card card_hover">
+														<div class="card-image-wrap">
+															<div class="card-img">
+																<a class="main-img" href="product.html">
+																	<img class="card_img" src="./assets/images/product-img6.webp"
+																		alt="FloMotif premium Office Bag">
+																</a>
+																<a class="hover-img" href="product.html">
+																	<img class="card_hover_img" src="./assets/images/product-img1.webp"
+																		alt="FloMotif premium Office Bag">
+																</a>
+															</div>
+														</div>
+														<div class="card-content">
+															<div class="card-title-wrap">
+																<a href="product.html" class="card-title">FloMotif premium Office Bag</a>
+															</div>
+															<div class="card-footer">
+																<div class="card-price-wrap">
+																	<p class="latest-price">৳1,670</p>
+																	<p class="previous-price">৳1,800</p>
+																</div>
+																<div class="card-btn">
+																	<a href="#!" class="btn">add</a>
+																</div>
+															</div>
+														</div>
+													</div>
 												</div>
-											</a>
-											<a href="#!" class="search-category">
-												<div class="search-category-img">
-													<img src="./assets/images/search-cetagory-img1.webp" alt="search-cetagory-img1.webp">
-												</div>
-												<div class="search-category-content">
-													<p class="title">Bedsheets</p>
-												</div>
-											</a>
-											<a href="#!" class="search-category">
-												<div class="search-category-img">
-													<img src="./assets/images/search-cetagory-img1.webp" alt="search-cetagory-img1.webp">
-												</div>
-												<div class="search-category-content">
-													<p class="title">Bedsheets</p>
-												</div>
-											</a>
-											<a href="#!" class="search-category">
-												<div class="search-category-img">
-													<img src="./assets/images/search-cetagory-img1.webp" alt="search-cetagory-img1.webp">
-												</div>
-												<div class="search-category-content">
-													<p class="title">Bedsheets</p>
-												</div>
-											</a>
+											</div>
+											<div class="swiper-button-next search-recommended-slider-btn-next"></div>
+											<div class="swiper-button-prev search-recommended-slider-btn-prev"></div>
 										</div>
 									</div>
 								</div>
@@ -211,40 +353,40 @@
 								<div class="search-result">
 									<p class="search-result-title">Search Results:</p>
 									<div class="search-result-items">
-										<a href="#!" class="search-result-item">
+										<a href="product.html" class="search-result-item">
 											<div class="search-result-img">
-												<img src="./assets/images/search-cetagory-img1.webp" alt="search-cetagory-img1.webp">
+												<img src="./assets/images/product-img1.webp" alt="Taj Guldasta Office Backpack">
 											</div>
 											<div class="search-result-content">
-												<p class="title">new premium Bedsheets</p>
-												<p class="price"><span class="lp">tk12,000</span><span class="pp">tk1440</span></p>
+												<p class="title">Taj Guldasta Office Backpack</p>
+												<p class="price"><span class="lp">tk1,870</span><span class="pp">tk2,200</span></p>
 											</div>
 										</a>
-										<a href="#!" class="search-result-item">
+										<a href="product.html" class="search-result-item">
 											<div class="search-result-img">
-												<img src="./assets/images/search-cetagory-img1.webp" alt="search-cetagory-img1.webp">
+												<img src="./assets/images/product-img2.webp" alt="FloMotif Women's Office Bag">
 											</div>
 											<div class="search-result-content">
-												<p class="title">new premium Bedsheets</p>
-												<p class="price"><span class="lp">tk12,000</span><span class="pp">tk1440</span></p>
+												<p class="title">FloMotif Women's Office Bag</p>
+												<p class="price"><span class="lp">tk1,670</span><span class="pp">tk1,800</span></p>
 											</div>
 										</a>
-										<a href="#!" class="search-result-item">
+										<a href="product.html" class="search-result-item">
 											<div class="search-result-img">
-												<img src="./assets/images/search-cetagory-img1.webp" alt="search-cetagory-img1.webp">
+												<img src="./assets/images/product-img3.webp" alt="Rhea Kapoor Office Bag - Kashmir Blooms">
 											</div>
 											<div class="search-result-content">
-												<p class="title">new premium Bedsheets</p>
-												<p class="price"><span class="lp">tk12,000</span><span class="pp">tk1440</span></p>
+												<p class="title">Rhea Kapoor Office Bag - Kashmir Blooms</p>
+												<p class="price"><span class="lp">tk1,870</span><span class="pp">tk2,200</span></p>
 											</div>
 										</a>
-										<a href="#!" class="search-result-item">
+										<a href="product.html" class="search-result-item">
 											<div class="search-result-img">
-												<img src="./assets/images/search-cetagory-img1.webp" alt="search-cetagory-img1.webp">
+												<img src="./assets/images/product-img4.webp" alt="Bidri Kaiser Statement Office Bag">
 											</div>
 											<div class="search-result-content">
-												<p class="title">new premium Bedsheets</p>
-												<p class="price"><span class="lp">tk12,000</span><span class="pp">tk1440</span></p>
+												<p class="title">Bidri Kaiser Statement Office Bag</p>
+												<p class="price"><span class="lp">tk1,070</span><span class="pp">tk1,200</span></p>
 											</div>
 										</a>
 									</div>
@@ -258,15 +400,6 @@
 				</div>
 				<!-- search-bar popup end -->
 				<div class="navbar-icons">
-					<button class="navbar-icon navbar-search-open-btn">
-						<svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
-							<path
-								d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z"
-								stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-							<path d="M17.5 17.5L13.875 13.875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-								stroke-linejoin="round"></path>
-						</svg>
-					</button>
 					<a href="#!" class="navbar-icon">
 						<svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
 							<path d="M10 10.1A2.85 2.85 0 1 0 10 4.4a2.85 2.85 0 0 0 0 5.7Z" stroke="currentColor" stroke-width="1.4">
@@ -288,52 +421,38 @@
 				<div class="navbar-link-area">
 					<ul class="navbar-links">
 						<li class="navbar-link">
-							<p class="navbar-link-btn">bedding</p>
+							<p class="navbar-link-btn">bags</p>
 							<div class="megamenu">
 								<div class="megamenu-items">
 									<div class="megamenu-item">
-										<h6 class="megamenu-item-title">Bedsheets By Design</h6>
+										<h6 class="megamenu-item-title">Office Bags</h6>
 										<ul>
 											<li>
-												<a href="#!">Abstract Bedsheets</a>
+												<a href="#!">Women's Office Bag</a>
 											</li>
 											<li>
-												<a href="#!">Solid Bedsheets</a>
+												<a href="#!">Statement Office Bag</a>
 											</li>
 											<li>
-												<a href="#!">Floral Bedsheets</a>
+												<a href="#!">Office Essential Bag</a>
 											</li>
 											<li>
-												<a href="#!">Geometric Bedsheets</a>
+												<a href="#!">Rhea Kapoor Office Bag</a>
 											</li>
 											<li>
-												<a href="#!">Fabulous Indian Prints</a>
+												<a href="#!">Office Tote Bag</a>
 											</li>
 											<li>
-												<a href="#!">Kids Bedsheets</a>
-											</li>
-										</ul>
-									</div>
-									<div class="megamenu-item">
-										<h6 class="megamenu-item-title">Bedsheets By Design</h6>
-										<ul>
-											<li>
-												<a href="#!">Abstract Bedsheets</a>
+												<a href="#!">Conference Office Bag</a>
 											</li>
 											<li>
-												<a href="#!">Solid Bedsheets</a>
+												<a href="#!">Laptop Bag</a>
 											</li>
 											<li>
-												<a href="#!">Floral Bedsheets</a>
+												<a href="#!">Statement Business Bag</a>
 											</li>
 											<li>
-												<a href="#!">Geometric Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Fabulous Indian Prints</a>
-											</li>
-											<li>
-												<a href="#!">Kids Bedsheets</a>
+												<a href="#!">Harriet Office Bag</a>
 											</li>
 										</ul>
 									</div>
@@ -409,615 +528,102 @@
 								</div>
 							</div>
 						</li>
-						<li class="navbar-link">
-							<p class="navbar-link-btn">Furnishings</p>
-							<div class="megamenu">
-								<div class="megamenu-items">
-									<div class="megamenu-item">
-										<h6 class="megamenu-item-title">Bedsheets By Design</h6>
-										<ul>
-											<li>
-												<a href="#!">Abstract Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Solid Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Floral Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Geometric Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Fabulous Indian Prints</a>
-											</li>
-											<li>
-												<a href="#!">Kids Bedsheets</a>
-											</li>
-										</ul>
-									</div>
-									<div class="megamenu-item">
-										<h6 class="megamenu-item-title">Bedsheets By Design</h6>
-										<ul>
-											<li>
-												<a href="#!">Abstract Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Solid Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Floral Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Geometric Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Fabulous Indian Prints</a>
-											</li>
-											<li>
-												<a href="#!">Kids Bedsheets</a>
-											</li>
-										</ul>
-									</div>
-									<div class="megamenu-item">
-										<h6 class="megamenu-item-title">Bedsheets By Design</h6>
-										<ul>
-											<li>
-												<a href="#!">Abstract Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Solid Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Floral Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Geometric Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Fabulous Indian Prints</a>
-											</li>
-											<li>
-												<a href="#!">Kids Bedsheets</a>
-											</li>
-										</ul>
-									</div>
-									<div class="megamenu-item">
-										<h6 class="megamenu-item-title">Bedsheets By Design</h6>
-										<ul>
-											<li>
-												<a href="#!">Abstract Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Solid Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Floral Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Geometric Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Fabulous Indian Prints</a>
-											</li>
-											<li>
-												<a href="#!">Kids Bedsheets</a>
-											</li>
-										</ul>
-									</div>
-									<div class="megamenu-item">
-										<h6 class="megamenu-item-title">Bedsheets By Design</h6>
-										<ul>
-											<li>
-												<a href="#!">Abstract Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Solid Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Floral Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Geometric Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Fabulous Indian Prints</a>
-											</li>
-											<li>
-												<a href="#!">Kids Bedsheets</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
+						<li class="navbar-link dropdown">
+							<p class="navbar-link-btn">Backpacks</p>
+							<ul class="drpodown-nav drpodown-nav1">
+								<li><a href="#!">Amalia Daypack - Fast Moving</a></li>
+								<li><a href="#!">Office Backpack</a></li>
+								<li><a href="#!">Amalia Laptop Backpack</a></li>
+								<li><a href="#!">Dalila Mini-Daypack</a></li>
+								<li><a href="#!">Olina Daypack</a></li>
+								<li><a href="#!">Backpack For Men</a></li>
+								<li><a href="#!">Statement Backpack</a></li>
+							</ul>
 						</li>
-						<li class="navbar-link">
-							<p class="navbar-link-btn">Kitchen</p>
-							<div class="megamenu">
-								<div class="megamenu-items">
-									<div class="megamenu-item">
-										<h6 class="megamenu-item-title">Bedsheets By Design</h6>
-										<ul>
-											<li>
-												<a href="#!">Abstract Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Solid Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Floral Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Geometric Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Fabulous Indian Prints</a>
-											</li>
-											<li>
-												<a href="#!">Kids Bedsheets</a>
-											</li>
-										</ul>
-									</div>
-									<div class="megamenu-item">
-										<h6 class="megamenu-item-title">Bedsheets By Design</h6>
-										<ul>
-											<li>
-												<a href="#!">Abstract Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Solid Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Floral Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Geometric Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Fabulous Indian Prints</a>
-											</li>
-											<li>
-												<a href="#!">Kids Bedsheets</a>
-											</li>
-										</ul>
-									</div>
-									<div class="megamenu-item">
-										<h6 class="megamenu-item-title">Bedsheets By Design</h6>
-										<ul>
-											<li>
-												<a href="#!">Abstract Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Solid Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Floral Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Geometric Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Fabulous Indian Prints</a>
-											</li>
-											<li>
-												<a href="#!">Kids Bedsheets</a>
-											</li>
-										</ul>
-									</div>
-									<div class="megamenu-item">
-										<h6 class="megamenu-item-title">Bedsheets By Design</h6>
-										<ul>
-											<li>
-												<a href="#!">Abstract Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Solid Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Floral Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Geometric Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Fabulous Indian Prints</a>
-											</li>
-											<li>
-												<a href="#!">Kids Bedsheets</a>
-											</li>
-										</ul>
-									</div>
-									<div class="megamenu-item">
-										<h6 class="megamenu-item-title">Bedsheets By Design</h6>
-										<ul>
-											<li>
-												<a href="#!">Abstract Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Solid Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Floral Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Geometric Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Fabulous Indian Prints</a>
-											</li>
-											<li>
-												<a href="#!">Kids Bedsheets</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
+						<li class="navbar-link dropdown">
+							<p class="navbar-link-btn">Travel Collection</p>
+							<ul class="drpodown-nav drpodown-nav1">
+								<li><a href="#!">Amalia Daypack - Fast Moving</a></li>
+								<li><a href="#!">Office Backpack</a></li>
+								<li><a href="#!">Amalia Laptop Backpack</a></li>
+								<li><a href="#!">Dalila Mini-Daypack</a></li>
+								<li><a href="#!">Olina Daypack</a></li>
+								<li><a href="#!">Backpack For Men</a></li>
+								<li><a href="#!">Statement Backpack</a></li>
+							</ul>
 						</li>
-						<li class="navbar-link">
-							<p class="navbar-link-btn">Dining</p>
-							<div class="megamenu">
-								<div class="megamenu-items">
-									<div class="megamenu-item">
-										<h6 class="megamenu-item-title">Bedsheets By Design</h6>
-										<ul>
-											<li>
-												<a href="#!">Abstract Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Solid Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Floral Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Geometric Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Fabulous Indian Prints</a>
-											</li>
-											<li>
-												<a href="#!">Kids Bedsheets</a>
-											</li>
-										</ul>
-									</div>
-									<div class="megamenu-item">
-										<h6 class="megamenu-item-title">Bedsheets By Design</h6>
-										<ul>
-											<li>
-												<a href="#!">Abstract Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Solid Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Floral Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Geometric Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Fabulous Indian Prints</a>
-											</li>
-											<li>
-												<a href="#!">Kids Bedsheets</a>
-											</li>
-										</ul>
-									</div>
-									<div class="megamenu-item">
-										<h6 class="megamenu-item-title">Bedsheets By Design</h6>
-										<ul>
-											<li>
-												<a href="#!">Abstract Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Solid Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Floral Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Geometric Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Fabulous Indian Prints</a>
-											</li>
-											<li>
-												<a href="#!">Kids Bedsheets</a>
-											</li>
-										</ul>
-									</div>
-									<div class="megamenu-item">
-										<h6 class="megamenu-item-title">Bedsheets By Design</h6>
-										<ul>
-											<li>
-												<a href="#!">Abstract Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Solid Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Floral Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Geometric Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Fabulous Indian Prints</a>
-											</li>
-											<li>
-												<a href="#!">Kids Bedsheets</a>
-											</li>
-										</ul>
-									</div>
-									<div class="megamenu-item">
-										<h6 class="megamenu-item-title">Bedsheets By Design</h6>
-										<ul>
-											<li>
-												<a href="#!">Abstract Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Solid Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Floral Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Geometric Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Fabulous Indian Prints</a>
-											</li>
-											<li>
-												<a href="#!">Kids Bedsheets</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
+						<li class="navbar-link dropdown">
+							<p class="navbar-link-btn">Wallets</p>
+							<ul class="drpodown-nav drpodown-nav1">
+								<li><a href="#!">Amalia Daypack - Fast Moving</a></li>
+								<li><a href="#!">Office Backpack</a></li>
+								<li><a href="#!">Amalia Laptop Backpack</a></li>
+								<li><a href="#!">Dalila Mini-Daypack</a></li>
+								<li><a href="#!">Olina Daypack</a></li>
+								<li><a href="#!">Backpack For Men</a></li>
+								<li><a href="#!">Statement Backpack</a></li>
+							</ul>
 						</li>
-						<li class="navbar-link">
-							<p class="navbar-link-btn">Decor</p>
-							<div class="megamenu">
-								<div class="megamenu-items">
-									<div class="megamenu-item">
-										<h6 class="megamenu-item-title">Bedsheets By Design</h6>
-										<ul>
-											<li>
-												<a href="#!">Abstract Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Solid Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Floral Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Geometric Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Fabulous Indian Prints</a>
-											</li>
-											<li>
-												<a href="#!">Kids Bedsheets</a>
-											</li>
-										</ul>
-									</div>
-									<div class="megamenu-item">
-										<h6 class="megamenu-item-title">Bedsheets By Design</h6>
-										<ul>
-											<li>
-												<a href="#!">Abstract Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Solid Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Floral Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Geometric Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Fabulous Indian Prints</a>
-											</li>
-											<li>
-												<a href="#!">Kids Bedsheets</a>
-											</li>
-										</ul>
-									</div>
-									<div class="megamenu-item">
-										<h6 class="megamenu-item-title">Bedsheets By Design</h6>
-										<ul>
-											<li>
-												<a href="#!">Abstract Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Solid Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Floral Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Geometric Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Fabulous Indian Prints</a>
-											</li>
-											<li>
-												<a href="#!">Kids Bedsheets</a>
-											</li>
-										</ul>
-									</div>
-									<div class="megamenu-item">
-										<h6 class="megamenu-item-title">Bedsheets By Design</h6>
-										<ul>
-											<li>
-												<a href="#!">Abstract Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Solid Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Floral Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Geometric Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Fabulous Indian Prints</a>
-											</li>
-											<li>
-												<a href="#!">Kids Bedsheets</a>
-											</li>
-										</ul>
-									</div>
-									<div class="megamenu-item">
-										<h6 class="megamenu-item-title">Bedsheets By Design</h6>
-										<ul>
-											<li>
-												<a href="#!">Abstract Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Solid Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Floral Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Geometric Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Fabulous Indian Prints</a>
-											</li>
-											<li>
-												<a href="#!">Kids Bedsheets</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
+						<li class="navbar-link dropdown">
+							<p class="navbar-link-btn">Zouk For Men</p>
+							<ul class="drpodown-nav drpodown-nav1">
+								<li><a href="#!">Amalia Daypack - Fast Moving</a></li>
+								<li><a href="#!">Office Backpack</a></li>
+								<li><a href="#!">Amalia Laptop Backpack</a></li>
+								<li><a href="#!">Dalila Mini-Daypack</a></li>
+								<li><a href="#!">Olina Daypack</a></li>
+								<li><a href="#!">Backpack For Men</a></li>
+								<li><a href="#!">Statement Backpack</a></li>
+							</ul>
 						</li>
-						<li class="navbar-link">
-							<p class="navbar-link-btn">Kids & Children</p>
-							<div class="megamenu">
-								<div class="megamenu-items">
-									<div class="megamenu-item">
-										<h6 class="megamenu-item-title">Bedsheets By Design</h6>
-										<ul>
-											<li>
-												<a href="#!">Abstract Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Solid Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Floral Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Geometric Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Fabulous Indian Prints</a>
-											</li>
-											<li>
-												<a href="#!">Kids Bedsheets</a>
-											</li>
-										</ul>
-									</div>
-									<div class="megamenu-item">
-										<h6 class="megamenu-item-title">Bedsheets By Design</h6>
-										<ul>
-											<li>
-												<a href="#!">Abstract Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Solid Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Floral Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Geometric Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Fabulous Indian Prints</a>
-											</li>
-											<li>
-												<a href="#!">Kids Bedsheets</a>
-											</li>
-										</ul>
-									</div>
-									<div class="megamenu-item">
-										<h6 class="megamenu-item-title">Bedsheets By Design</h6>
-										<ul>
-											<li>
-												<a href="#!">Abstract Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Solid Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Floral Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Geometric Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Fabulous Indian Prints</a>
-											</li>
-											<li>
-												<a href="#!">Kids Bedsheets</a>
-											</li>
-										</ul>
-									</div>
-									<div class="megamenu-item">
-										<h6 class="megamenu-item-title">Bedsheets By Design</h6>
-										<ul>
-											<li>
-												<a href="#!">Abstract Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Solid Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Floral Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Geometric Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Fabulous Indian Prints</a>
-											</li>
-											<li>
-												<a href="#!">Kids Bedsheets</a>
-											</li>
-										</ul>
-									</div>
-									<div class="megamenu-item">
-										<h6 class="megamenu-item-title">Bedsheets By Design</h6>
-										<ul>
-											<li>
-												<a href="#!">Abstract Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Solid Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Floral Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Geometric Bedsheets</a>
-											</li>
-											<li>
-												<a href="#!">Fabulous Indian Prints</a>
-											</li>
-											<li>
-												<a href="#!">Kids Bedsheets</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
+						<li class="navbar-link dropdown">
+							<p class="navbar-link-btn">Collections</p>
+							<ul class="drpodown-nav drpodown-nav1">
+								<li><a href="#!">Amalia Daypack - Fast Moving</a></li>
+								<li><a href="#!">Office Backpack</a></li>
+								<li><a href="#!">Amalia Laptop Backpack</a></li>
+								<li><a href="#!">Dalila Mini-Daypack</a></li>
+								<li><a href="#!">Olina Daypack</a></li>
+								<li><a href="#!">Backpack For Men</a></li>
+								<li><a href="#!">Statement Backpack</a></li>
+							</ul>
+						</li>
+						<li class="navbar-link dropdown">
+							<p class="navbar-link-btn">Z. By Zouk</p>
+							<ul class="drpodown-nav drpodown-nav1">
+								<li><a href="#!">Amalia Daypack - Fast Moving</a></li>
+								<li><a href="#!">Office Backpack</a></li>
+								<li><a href="#!">Amalia Laptop Backpack</a></li>
+								<li><a href="#!">Dalila Mini-Daypack</a></li>
+								<li><a href="#!">Olina Daypack</a></li>
+								<li><a href="#!">Backpack For Men</a></li>
+								<li><a href="#!">Statement Backpack</a></li>
+							</ul>
+						</li>
+						<li class="navbar-link dropdown">
+							<p class="navbar-link-btn">Sale</p>
+							<ul class="drpodown-nav drpodown-nav1">
+								<li><a href="#!">Sling BOGO</a></li>
+								<li>
+									<button>Value Picks
+										<span class="icon">
+											<svg aria-hidden="true" focusable="false" fill="none" width="8"
+												class="icon icon-arrow-right  icon--direction-aware" viewBox="0 0 16 18">
+												<path d="m5 17 8-8-8-8" stroke="currentColor" stroke-linecap="square"></path>
+											</svg>
+										</span>
+									</button>
+									<ul class="drpodown-nav drpodown-nav2">
+										<li><a href="#!">Amalia Daypack - Fast Moving</a></li>
+										<li><a href="#!">Office Backpack</a></li>
+										<li><a href="#!">Amalia Laptop Backpack</a></li>
+										<li><a href="#!">Dalila Mini-Daypack</a></li>
+										<li><a href="#!">Olina Daypack</a></li>
+										<li><a href="#!">Backpack For Men</a></li>
+										<li><a href="#!">Statement Backpack</a></li>
+									</ul>
+								</li>
+							</ul>
 						</li>
 					</ul>
 				</div>
@@ -1028,7 +634,7 @@
 		<div class="mobile-menu-wrap">
 			<div class="mobile-menu-close-window-btn"></div>
 			<div class="mobile-menu-container">
-				<div class="mobile-menu-top">
+				<div class="mobile-menu-container-top">
 					<button class="mobile-menu-close-btn" type="button">
 						<svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
 							<path d="M16 10H4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
@@ -1036,741 +642,1213 @@
 								stroke-linejoin="round"></path>
 						</svg>
 					</button>
-					<p class="mobile-menu-title">all categories</p>
-					<button class="mobile-menu-search navbar-search-open-btn">
-						<svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
-							<path
-								d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z"
-								stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-							<path d="M17.5 17.5L13.875 13.875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-								stroke-linejoin="round"></path>
-						</svg>
-					</button>
+					<a href="#!" class="mobile-menu-logo">
+						<img src="./assets/images/store-logo.png" alt="store-logo.png">
+					</a>
 				</div>
-				<div class="mobile-menu-inner">
-					<div class="mobile-menu-tabs">
-						<a href="#bedding" class="mobile-menu-tab active">
-							<span class="mobile-menu-tab-img">
-								<img src="./assets/images/mobile-menu-tab-img1.webp" alt="mobile-menu-tab-img1.webp">
+				<div class="mobile-nav-items">
+					<div class="mobile-nav-item">
+						<div class="mobile-nav-item-heading">
+							<p class="title">bags</p>
+							<span class="icon">
+								<svg aria-hidden="true" focusable="false" fill="none" width="12" viewBox="0 0 10 10">
+									<path d="m3 9 4-4-4-4" stroke="currentColor" stroke-linecap="square"></path>
+								</svg>
 							</span>
-							<span class="mobile-menu-tab-title">bedding</span>
-						</a>
-						<a href="#furnishings" class="mobile-menu-tab">
-							<span class="mobile-menu-tab-img">
-								<img src="./assets/images/mobile-menu-tab-img12.webp" alt="mobile-menu-tab-img12.webp">
+						</div>
+						<div class="mobile-nav-item-content">
+							<div class="mobile-menu-top">
+								<button class="mobile-menu-close-btn" type="button">
+									<svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+										<path d="M16 10H4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+										<path d="M8 6L4 10L8 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+											stroke-linejoin="round"></path>
+									</svg>
+								</button>
+								<p class="mobile-menu-title">all categories</p>
+								<button class="mobile-menu-search navbar-search-open-btn">
+									<svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+										<path
+											d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z"
+											stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M17.5 17.5L13.875 13.875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+											stroke-linejoin="round"></path>
+									</svg>
+								</button>
+							</div>
+							<div class="mobile-menu-inner">
+								<div class="mobile-menu-tabs">
+									<a href="#sling_bags" class="mobile-menu-tab active">
+										<span class="mobile-menu-tab-img">
+											<img src="./assets/images/mobile-menu-tab-img1.avif" alt="mobile-menu-tab-img1.avif">
+										</span>
+										<span class="mobile-menu-tab-title">Sling Bags</span>
+									</a>
+									<a href="#office_bags" class="mobile-menu-tab">
+										<span class="mobile-menu-tab-img">
+											<img src="./assets/images/mobile-menu-tab-img2.webp" alt="mobile-menu-tab-img2.webp">
+										</span>
+										<span class="mobile-menu-tab-title">Office Bags</span>
+									</a>
+									<a href="#tote_bags" class="mobile-menu-tab">
+										<span class="mobile-menu-tab-img">
+											<img src="./assets/images/mobile-menu-tab-img3.avif" alt="mobile-menu-tab-img3.avif">
+										</span>
+										<span class="mobile-menu-tab-title">Tote Bags</span>
+									</a>
+									<a href="#satchel_bags" class="mobile-menu-tab">
+										<span class="mobile-menu-tab-img">
+											<img src="./assets/images/mobile-menu-tab-img4.webp" alt="mobile-menu-tab-img4.webp">
+										</span>
+										<span class="mobile-menu-tab-title">Satchel Bags</span>
+									</a>
+									<a href="#handbags" class="mobile-menu-tab">
+										<span class="mobile-menu-tab-img">
+											<img src="./assets/images/mobile-menu-tab-img5.avif" alt="mobile-menu-tab-img5.avif">
+										</span>
+										<span class="mobile-menu-tab-title">Handbags</span>
+									</a>
+									<a href="#lunch_bags" class="mobile-menu-tab">
+										<span class="mobile-menu-tab-img">
+											<img src="./assets/images/mobile-menu-tab-img6.avif" alt="mobile-menu-tab-img6.avif">
+										</span>
+										<span class="mobile-menu-tab-title">Lunch Bags</span>
+									</a>
+									<a href="#find_by_occasion" class="mobile-menu-tab">
+										<span class="mobile-menu-tab-img">
+											<img src="./assets/images/mobile-menu-tab-img7.webp" alt="mobile-menu-tab-img7.webp">
+										</span>
+										<span class="mobile-menu-tab-title">Find by Occasion</span>
+									</a>
+									<a href="#find_by_prints" class="mobile-menu-tab">
+										<span class="mobile-menu-tab-img">
+											<img src="./assets/images/mobile-menu-tab-img8.avif" alt="mobile-menu-tab-img8.avif">
+										</span>
+										<span class="mobile-menu-tab-title">Find by Prints</span>
+									</a>
+								</div>
+								<div class="mobile-menu-tabs-contents">
+									<div class="mobile-menu-tabs-content" id="sling_bags">
+										<div class="mobile-menu-tabs-content-heading">
+											<p class="title">sling bags</p>
+											<span class="line"></span>
+										</div>
+										<div class="mobile-menu-tabs-content-items">
+											<div class="mobile-menu-tabs-content-item">
+												<p class="mobile-menu-tabs-content-item-title">bags by size</p>
+												<div class="mobile-menu-tabs-content-item-grids">
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img1.avif" alt="mobile-menu-tab-img1.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">view all bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img2.webp" alt="mobile-menu-tab-img2.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">single bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img3.avif" alt="mobile-menu-tab-img3.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">queen bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img4.webp" alt="mobile-menu-tab-img4.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">king bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img5.avif" alt="mobile-menu-tab-img5.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">fitted bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img6.avif" alt="mobile-menu-tab-img6.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">premium bagss</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img7.webp" alt="mobile-menu-tab-img7.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">latest bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img8.avif" alt="mobile-menu-tab-img8.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">normal bags</span>
+													</a>
+												</div>
+											</div>
+											<div class="mobile-menu-tabs-content-item">
+												<p class="mobile-menu-tabs-content-item-title">More in bags</p>
+												<div class="mobile-menu-tabs-content-item-grids">
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img1.avif" alt="mobile-menu-tab-img1.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">view all bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img2.webp" alt="mobile-menu-tab-img2.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">single bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img3.avif" alt="mobile-menu-tab-img3.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">queen bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img4.webp" alt="mobile-menu-tab-img4.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">king bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img5.avif" alt="mobile-menu-tab-img5.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">fitted bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img6.avif" alt="mobile-menu-tab-img6.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">premium bagss</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img7.webp" alt="mobile-menu-tab-img7.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">latest bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img8.avif" alt="mobile-menu-tab-img8.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">normal bags</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="mobile-menu-tabs-content" id="office_bags">
+										<div class="mobile-menu-tabs-content-heading">
+											<p class="title">Office Bags</p>
+											<span class="line"></span>
+										</div>
+										<div class="mobile-menu-tabs-content-items">
+											<div class="mobile-menu-tabs-content-item">
+												<p class="mobile-menu-tabs-content-item-title">bags by size</p>
+												<div class="mobile-menu-tabs-content-item-grids">
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img1.avif" alt="mobile-menu-tab-img1.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">view all bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img2.webp" alt="mobile-menu-tab-img2.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">single bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img3.avif" alt="mobile-menu-tab-img3.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">queen bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img4.webp" alt="mobile-menu-tab-img4.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">king bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img5.avif" alt="mobile-menu-tab-img5.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">fitted bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img6.avif" alt="mobile-menu-tab-img6.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">premium bagss</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img7.webp" alt="mobile-menu-tab-img7.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">latest bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img8.avif" alt="mobile-menu-tab-img8.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">normal bags</span>
+													</a>
+												</div>
+											</div>
+											<div class="mobile-menu-tabs-content-item">
+												<p class="mobile-menu-tabs-content-item-title">More in bags</p>
+												<div class="mobile-menu-tabs-content-item-grids">
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img1.avif" alt="mobile-menu-tab-img1.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">view all bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img2.webp" alt="mobile-menu-tab-img2.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">single bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img3.avif" alt="mobile-menu-tab-img3.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">queen bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img4.webp" alt="mobile-menu-tab-img4.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">king bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img5.avif" alt="mobile-menu-tab-img5.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">fitted bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img6.avif" alt="mobile-menu-tab-img6.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">premium bagss</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img7.webp" alt="mobile-menu-tab-img7.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">latest bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img8.avif" alt="mobile-menu-tab-img8.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">normal bags</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="mobile-menu-tabs-content" id="tote_bags">
+										<div class="mobile-menu-tabs-content-heading">
+											<p class="title">Tote Bags</p>
+											<span class="line"></span>
+										</div>
+										<div class="mobile-menu-tabs-content-items">
+											<div class="mobile-menu-tabs-content-item">
+												<p class="mobile-menu-tabs-content-item-title">bags by size</p>
+												<div class="mobile-menu-tabs-content-item-grids">
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img1.avif" alt="mobile-menu-tab-img1.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">view all bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img2.webp" alt="mobile-menu-tab-img2.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">single bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img3.avif" alt="mobile-menu-tab-img3.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">queen bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img4.webp" alt="mobile-menu-tab-img4.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">king bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img5.avif" alt="mobile-menu-tab-img5.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">fitted bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img6.avif" alt="mobile-menu-tab-img6.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">premium bagss</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img7.webp" alt="mobile-menu-tab-img7.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">latest bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img8.avif" alt="mobile-menu-tab-img8.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">normal bags</span>
+													</a>
+												</div>
+											</div>
+											<div class="mobile-menu-tabs-content-item">
+												<p class="mobile-menu-tabs-content-item-title">More in bags</p>
+												<div class="mobile-menu-tabs-content-item-grids">
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img1.avif" alt="mobile-menu-tab-img1.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">view all bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img2.webp" alt="mobile-menu-tab-img2.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">single bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img3.avif" alt="mobile-menu-tab-img3.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">queen bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img4.webp" alt="mobile-menu-tab-img4.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">king bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img5.avif" alt="mobile-menu-tab-img5.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">fitted bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img6.avif" alt="mobile-menu-tab-img6.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">premium bagss</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img7.webp" alt="mobile-menu-tab-img7.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">latest bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img8.avif" alt="mobile-menu-tab-img8.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">normal bags</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="mobile-menu-tabs-content" id="satchel_bags">
+										<div class="mobile-menu-tabs-content-heading">
+											<p class="title">Satchel Bags</p>
+											<span class="line"></span>
+										</div>
+										<div class="mobile-menu-tabs-content-items">
+											<div class="mobile-menu-tabs-content-item">
+												<p class="mobile-menu-tabs-content-item-title">bags by size</p>
+												<div class="mobile-menu-tabs-content-item-grids">
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img1.avif" alt="mobile-menu-tab-img1.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">view all bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img2.webp" alt="mobile-menu-tab-img2.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">single bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img3.avif" alt="mobile-menu-tab-img3.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">queen bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img4.webp" alt="mobile-menu-tab-img4.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">king bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img5.avif" alt="mobile-menu-tab-img5.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">fitted bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img6.avif" alt="mobile-menu-tab-img6.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">premium bagss</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img7.webp" alt="mobile-menu-tab-img7.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">latest bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img8.avif" alt="mobile-menu-tab-img8.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">normal bags</span>
+													</a>
+												</div>
+											</div>
+											<div class="mobile-menu-tabs-content-item">
+												<p class="mobile-menu-tabs-content-item-title">More in bags</p>
+												<div class="mobile-menu-tabs-content-item-grids">
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img1.avif" alt="mobile-menu-tab-img1.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">view all bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img2.webp" alt="mobile-menu-tab-img2.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">single bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img3.avif" alt="mobile-menu-tab-img3.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">queen bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img4.webp" alt="mobile-menu-tab-img4.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">king bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img5.avif" alt="mobile-menu-tab-img5.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">fitted bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img6.avif" alt="mobile-menu-tab-img6.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">premium bagss</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img7.webp" alt="mobile-menu-tab-img7.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">latest bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img8.avif" alt="mobile-menu-tab-img8.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">normal bags</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="mobile-menu-tabs-content" id="handbags">
+										<div class="mobile-menu-tabs-content-heading">
+											<p class="title">Handbags</p>
+											<span class="line"></span>
+										</div>
+										<div class="mobile-menu-tabs-content-items">
+											<div class="mobile-menu-tabs-content-item">
+												<p class="mobile-menu-tabs-content-item-title">bags by size</p>
+												<div class="mobile-menu-tabs-content-item-grids">
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img1.avif" alt="mobile-menu-tab-img1.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">view all bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img2.webp" alt="mobile-menu-tab-img2.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">single bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img3.avif" alt="mobile-menu-tab-img3.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">queen bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img4.webp" alt="mobile-menu-tab-img4.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">king bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img5.avif" alt="mobile-menu-tab-img5.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">fitted bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img6.avif" alt="mobile-menu-tab-img6.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">premium bagss</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img7.webp" alt="mobile-menu-tab-img7.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">latest bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img8.avif" alt="mobile-menu-tab-img8.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">normal bags</span>
+													</a>
+												</div>
+											</div>
+											<div class="mobile-menu-tabs-content-item">
+												<p class="mobile-menu-tabs-content-item-title">More in bags</p>
+												<div class="mobile-menu-tabs-content-item-grids">
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img1.avif" alt="mobile-menu-tab-img1.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">view all bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img2.webp" alt="mobile-menu-tab-img2.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">single bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img3.avif" alt="mobile-menu-tab-img3.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">queen bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img4.webp" alt="mobile-menu-tab-img4.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">king bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img5.avif" alt="mobile-menu-tab-img5.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">fitted bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img6.avif" alt="mobile-menu-tab-img6.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">premium bagss</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img7.webp" alt="mobile-menu-tab-img7.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">latest bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img8.avif" alt="mobile-menu-tab-img8.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">normal bags</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="mobile-menu-tabs-content" id="lunch_bags">
+										<div class="mobile-menu-tabs-content-heading">
+											<p class="title">Lunch Bags</p>
+											<span class="line"></span>
+										</div>
+										<div class="mobile-menu-tabs-content-items">
+											<div class="mobile-menu-tabs-content-item">
+												<p class="mobile-menu-tabs-content-item-title">bags by size</p>
+												<div class="mobile-menu-tabs-content-item-grids">
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img1.avif" alt="mobile-menu-tab-img1.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">view all bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img2.webp" alt="mobile-menu-tab-img2.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">single bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img3.avif" alt="mobile-menu-tab-img3.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">queen bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img4.webp" alt="mobile-menu-tab-img4.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">king bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img5.avif" alt="mobile-menu-tab-img5.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">fitted bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img6.avif" alt="mobile-menu-tab-img6.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">premium bagss</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img7.webp" alt="mobile-menu-tab-img7.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">latest bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img8.avif" alt="mobile-menu-tab-img8.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">normal bags</span>
+													</a>
+												</div>
+											</div>
+											<div class="mobile-menu-tabs-content-item">
+												<p class="mobile-menu-tabs-content-item-title">More in bags</p>
+												<div class="mobile-menu-tabs-content-item-grids">
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img1.avif" alt="mobile-menu-tab-img1.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">view all bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img2.webp" alt="mobile-menu-tab-img2.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">single bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img3.avif" alt="mobile-menu-tab-img3.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">queen bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img4.webp" alt="mobile-menu-tab-img4.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">king bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img5.avif" alt="mobile-menu-tab-img5.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">fitted bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img6.avif" alt="mobile-menu-tab-img6.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">premium bagss</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img7.webp" alt="mobile-menu-tab-img7.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">latest bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img8.avif" alt="mobile-menu-tab-img8.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">normal bags</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="mobile-menu-tabs-content" id="find_by_occasion">
+										<div class="mobile-menu-tabs-content-heading">
+											<p class="title">Find by Occasion</p>
+											<span class="line"></span>
+										</div>
+										<div class="mobile-menu-tabs-content-items">
+											<div class="mobile-menu-tabs-content-item">
+												<p class="mobile-menu-tabs-content-item-title">bags by size</p>
+												<div class="mobile-menu-tabs-content-item-grids">
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img1.avif" alt="mobile-menu-tab-img1.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">view all bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img2.webp" alt="mobile-menu-tab-img2.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">single bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img3.avif" alt="mobile-menu-tab-img3.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">queen bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img4.webp" alt="mobile-menu-tab-img4.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">king bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img5.avif" alt="mobile-menu-tab-img5.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">fitted bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img6.avif" alt="mobile-menu-tab-img6.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">premium bagss</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img7.webp" alt="mobile-menu-tab-img7.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">latest bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img8.avif" alt="mobile-menu-tab-img8.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">normal bags</span>
+													</a>
+												</div>
+											</div>
+											<div class="mobile-menu-tabs-content-item">
+												<p class="mobile-menu-tabs-content-item-title">More in bags</p>
+												<div class="mobile-menu-tabs-content-item-grids">
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img1.avif" alt="mobile-menu-tab-img1.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">view all bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img2.webp" alt="mobile-menu-tab-img2.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">single bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img3.avif" alt="mobile-menu-tab-img3.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">queen bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img4.webp" alt="mobile-menu-tab-img4.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">king bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img5.avif" alt="mobile-menu-tab-img5.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">fitted bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img6.avif" alt="mobile-menu-tab-img6.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">premium bagss</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img7.webp" alt="mobile-menu-tab-img7.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">latest bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img8.avif" alt="mobile-menu-tab-img8.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">normal bags</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="mobile-menu-tabs-content" id="find_by_prints">
+										<div class="mobile-menu-tabs-content-heading">
+											<p class="title">Find by Prints</p>
+											<span class="line"></span>
+										</div>
+										<div class="mobile-menu-tabs-content-items">
+											<div class="mobile-menu-tabs-content-item">
+												<p class="mobile-menu-tabs-content-item-title">bags by size</p>
+												<div class="mobile-menu-tabs-content-item-grids">
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img1.avif" alt="mobile-menu-tab-img1.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">view all bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img2.webp" alt="mobile-menu-tab-img2.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">single bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img3.avif" alt="mobile-menu-tab-img3.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">queen bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img4.webp" alt="mobile-menu-tab-img4.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">king bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img5.avif" alt="mobile-menu-tab-img5.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">fitted bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img6.avif" alt="mobile-menu-tab-img6.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">premium bagss</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img7.webp" alt="mobile-menu-tab-img7.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">latest bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img8.avif" alt="mobile-menu-tab-img8.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">normal bags</span>
+													</a>
+												</div>
+											</div>
+											<div class="mobile-menu-tabs-content-item">
+												<p class="mobile-menu-tabs-content-item-title">More in bags</p>
+												<div class="mobile-menu-tabs-content-item-grids">
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img1.avif" alt="mobile-menu-tab-img1.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">view all bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img2.webp" alt="mobile-menu-tab-img2.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">single bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img3.avif" alt="mobile-menu-tab-img3.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">queen bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img4.webp" alt="mobile-menu-tab-img4.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">king bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img5.avif" alt="mobile-menu-tab-img5.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">fitted bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img6.avif" alt="mobile-menu-tab-img6.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">premium bagss</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img7.webp" alt="mobile-menu-tab-img7.webp">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">latest bags</span>
+													</a>
+													<a href="#!" class="mobile-menu-tabs-content-item-grid">
+														<span class="mobile-menu-tabs-content-item-grid-img">
+															<img src="./assets/images/mobile-menu-tab-img8.avif" alt="mobile-menu-tab-img8.avif">
+														</span>
+														<span class="mobile-menu-tabs-content-item-grid-title">normal bags</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mobile-nav-item">
+						<div class="mobile-nav-item-heading">
+							<p class="title">Backpacks</p>
+							<span class="icon">
+								<svg aria-hidden="true" focusable="false" fill="none" width="12" viewBox="0 0 10 10">
+									<path d="m3 9 4-4-4-4" stroke="currentColor" stroke-linecap="square"></path>
+								</svg>
 							</span>
-							<span class="mobile-menu-tab-title">Furnishings</span>
-						</a>
-						<a href="#decor" class="mobile-menu-tab">
-							<span class="mobile-menu-tab-img">
-								<img src="./assets/images/mobile-menu-tab-img22.webp" alt="mobile-menu-tab-img22.webp">
+						</div>
+						<div class="mobile-nav-item-content">
+							<div class="mobile-menu-top">
+								<button class="mobile-menu-close-btn" type="button">
+									<svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+										<path d="M16 10H4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+										<path d="M8 6L4 10L8 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+											stroke-linejoin="round"></path>
+									</svg>
+								</button>
+								<p class="mobile-menu-title">Backpacks</p>
+							</div>
+							<ul class="mobile-nav-sublist">
+								<li><a href="#!">Amalia Daypack - Fast Moving</a></li>
+								<li><a href="#!">Office Backpack</a></li>
+								<li><a href="#!">Amalia Laptop Backpack</a></li>
+								<li><a href="#!">Dalila Mini-Daypack</a></li>
+								<li><a href="#!">Olina Daypack</a></li>
+								<li><a href="#!">Backpack For Men</a></li>
+								<li><a href="#!">Statement Backpack</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="mobile-nav-item">
+						<div class="mobile-nav-item-heading">
+							<p class="title">Travel Collection</p>
+							<span class="icon">
+								<svg aria-hidden="true" focusable="false" fill="none" width="12" viewBox="0 0 10 10">
+									<path d="m3 9 4-4-4-4" stroke="currentColor" stroke-linecap="square"></path>
+								</svg>
 							</span>
-							<span class="mobile-menu-tab-title">Decor</span>
-						</a>
-						<a href="#dining" class="mobile-menu-tab">
-							<span class="mobile-menu-tab-img">
-								<img src="./assets/images/mobile-menu-tab-img23.webp" alt="mobile-menu-tab-img23.webp">
+						</div>
+						<div class="mobile-nav-item-content">
+							<div class="mobile-menu-top">
+								<button class="mobile-menu-close-btn" type="button">
+									<svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+										<path d="M16 10H4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+										<path d="M8 6L4 10L8 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+											stroke-linejoin="round"></path>
+									</svg>
+								</button>
+								<p class="mobile-menu-title">Travel Collection</p>
+							</div>
+							<ul class="mobile-nav-sublist">
+								<li><a href="#!">Amalia Daypack - Fast Moving</a></li>
+								<li><a href="#!">Office Backpack</a></li>
+								<li><a href="#!">Amalia Laptop Backpack</a></li>
+								<li><a href="#!">Dalila Mini-Daypack</a></li>
+								<li><a href="#!">Olina Daypack</a></li>
+								<li><a href="#!">Backpack For Men</a></li>
+								<li><a href="#!">Statement Backpack</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="mobile-nav-item">
+						<div class="mobile-nav-item-heading">
+							<p class="title">Wallets</p>
+							<span class="icon">
+								<svg aria-hidden="true" focusable="false" fill="none" width="12" viewBox="0 0 10 10">
+									<path d="m3 9 4-4-4-4" stroke="currentColor" stroke-linecap="square"></path>
+								</svg>
 							</span>
-							<span class="mobile-menu-tab-title">Dining</span>
-						</a>
-						<a href="#kitchen" class="mobile-menu-tab">
-							<span class="mobile-menu-tab-img">
-								<img src="./assets/images/mobile-menu-tab-img24.webp" alt="mobile-menu-tab-img24.webp">
+						</div>
+						<div class="mobile-nav-item-content">
+							<div class="mobile-menu-top">
+								<button class="mobile-menu-close-btn" type="button">
+									<svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+										<path d="M16 10H4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+										<path d="M8 6L4 10L8 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+											stroke-linejoin="round"></path>
+									</svg>
+								</button>
+								<p class="mobile-menu-title">Wallets</p>
+							</div>
+							<ul class="mobile-nav-sublist">
+								<li><a href="#!">Amalia Daypack - Fast Moving</a></li>
+								<li><a href="#!">Office Backpack</a></li>
+								<li><a href="#!">Amalia Laptop Backpack</a></li>
+								<li><a href="#!">Dalila Mini-Daypack</a></li>
+								<li><a href="#!">Olina Daypack</a></li>
+								<li><a href="#!">Backpack For Men</a></li>
+								<li><a href="#!">Statement Backpack</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="mobile-nav-item">
+						<div class="mobile-nav-item-heading">
+							<p class="title">Zouk For Men</p>
+							<span class="icon">
+								<svg aria-hidden="true" focusable="false" fill="none" width="12" viewBox="0 0 10 10">
+									<path d="m3 9 4-4-4-4" stroke="currentColor" stroke-linecap="square"></path>
+								</svg>
 							</span>
-							<span class="mobile-menu-tab-title">Kitchen</span>
-						</a>
-						<a href="#bath" class="mobile-menu-tab">
-							<span class="mobile-menu-tab-img">
-								<img src="./assets/images/mobile-menu-tab-img25.webp" alt="mobile-menu-tab-img25.webp">
+						</div>
+						<div class="mobile-nav-item-content">
+							<div class="mobile-menu-top">
+								<button class="mobile-menu-close-btn" type="button">
+									<svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+										<path d="M16 10H4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+										<path d="M8 6L4 10L8 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+											stroke-linejoin="round"></path>
+									</svg>
+								</button>
+								<p class="mobile-menu-title">Zouk For Men</p>
+							</div>
+							<ul class="mobile-nav-sublist">
+								<li><a href="#!">Amalia Daypack - Fast Moving</a></li>
+								<li><a href="#!">Office Backpack</a></li>
+								<li><a href="#!">Amalia Laptop Backpack</a></li>
+								<li><a href="#!">Dalila Mini-Daypack</a></li>
+								<li><a href="#!">Olina Daypack</a></li>
+								<li><a href="#!">Backpack For Men</a></li>
+								<li><a href="#!">Statement Backpack</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="mobile-nav-item">
+						<div class="mobile-nav-item-heading">
+							<p class="title">Collections</p>
+							<span class="icon">
+								<svg aria-hidden="true" focusable="false" fill="none" width="12" viewBox="0 0 10 10">
+									<path d="m3 9 4-4-4-4" stroke="currentColor" stroke-linecap="square"></path>
+								</svg>
 							</span>
-							<span class="mobile-menu-tab-title">Bath</span>
-						</a>
-						<a href="#organisers" class="mobile-menu-tab">
-							<span class="mobile-menu-tab-img">
-								<img src="./assets/images/mobile-menu-tab-img26.webp" alt="mobile-menu-tab-img26.webp">
+						</div>
+						<div class="mobile-nav-item-content">
+							<div class="mobile-menu-top">
+								<button class="mobile-menu-close-btn" type="button">
+									<svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+										<path d="M16 10H4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+										<path d="M8 6L4 10L8 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+											stroke-linejoin="round"></path>
+									</svg>
+								</button>
+								<p class="mobile-menu-title">Collections</p>
+							</div>
+							<ul class="mobile-nav-sublist">
+								<li><a href="#!">Amalia Daypack - Fast Moving</a></li>
+								<li><a href="#!">Office Backpack</a></li>
+								<li><a href="#!">Amalia Laptop Backpack</a></li>
+								<li><a href="#!">Dalila Mini-Daypack</a></li>
+								<li><a href="#!">Olina Daypack</a></li>
+								<li><a href="#!">Backpack For Men</a></li>
+								<li><a href="#!">Statement Backpack</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="mobile-nav-item">
+						<div class="mobile-nav-item-heading">
+							<p class="title">Z. By Zouk</p>
+							<span class="icon">
+								<svg aria-hidden="true" focusable="false" fill="none" width="12" viewBox="0 0 10 10">
+									<path d="m3 9 4-4-4-4" stroke="currentColor" stroke-linecap="square"></path>
+								</svg>
 							</span>
-							<span class="mobile-menu-tab-title">Organisers</span>
-						</a>
-						<a href="#gifts" class="mobile-menu-tab">
-							<span class="mobile-menu-tab-img">
-								<img src="./assets/images/mobile-menu-tab-img27.webp" alt="mobile-menu-tab-img27.webp">
-							</span>
-							<span class="mobile-menu-tab-title">Gifts</span>
+						</div>
+						<div class="mobile-nav-item-content">
+							<div class="mobile-menu-top">
+								<button class="mobile-menu-close-btn" type="button">
+									<svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+										<path d="M16 10H4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+										<path d="M8 6L4 10L8 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+											stroke-linejoin="round"></path>
+									</svg>
+								</button>
+								<p class="mobile-menu-title">Z. By Zouk</p>
+							</div>
+							<ul class="mobile-nav-sublist">
+								<li><a href="#!">Amalia Daypack - Fast Moving</a></li>
+								<li><a href="#!">Office Backpack</a></li>
+								<li><a href="#!">Amalia Laptop Backpack</a></li>
+								<li><a href="#!">Dalila Mini-Daypack</a></li>
+								<li><a href="#!">Olina Daypack</a></li>
+								<li><a href="#!">Backpack For Men</a></li>
+								<li><a href="#!">Statement Backpack</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="mobile-nav-item">
+						<a href="collections.html" class="mobile-nav-item-heading">
+							<p class="title">collections page</p>
 						</a>
 					</div>
-					<div class="mobile-menu-tabs-contents">
-						<div class="mobile-menu-tabs-content" id="bedding">
-							<div class="mobile-menu-tabs-content-heading">
-								<p class="title">bedding</p>
-								<span class="line"></span>
-							</div>
-							<div class="mobile-menu-tabs-content-items">
-								<div class="mobile-menu-tabs-content-item">
-									<p class="mobile-menu-tabs-content-item-title">Bedsheets by size</p>
-									<div class="mobile-menu-tabs-content-item-grids">
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img1.webp" alt="mobile-menu-tab-img1.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">view all bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img2.webp" alt="mobile-menu-tab-img2.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">single bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img3.webp" alt="mobile-menu-tab-img3.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">queen bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img4.webp" alt="mobile-menu-tab-img4.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">king bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img5.webp" alt="mobile-menu-tab-img5.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">fitted bedsheets</span>
-										</a>
-									</div>
-								</div>
-								<div class="mobile-menu-tabs-content-item">
-									<p class="mobile-menu-tabs-content-item-title">More in Bedding</p>
-									<div class="mobile-menu-tabs-content-item-grids">
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img6.webp" alt="mobile-menu-tab-img6.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">premium pillow covers</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img1.webp" alt="mobile-menu-tab-img1.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">view all bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img2.webp" alt="mobile-menu-tab-img2.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">single bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img3.webp" alt="mobile-menu-tab-img3.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">queen bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img4.webp" alt="mobile-menu-tab-img4.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">king bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img5.webp" alt="mobile-menu-tab-img5.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">fitted bedsheets</span>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="mobile-menu-tabs-content" id="furnishings">
-							<div class="mobile-menu-tabs-content-heading">
-								<p class="title">Furnishings</p>
-								<span class="line"></span>
-							</div>
-							<div class="mobile-menu-tabs-content-items">
-								<div class="mobile-menu-tabs-content-item">
-									<p class="mobile-menu-tabs-content-item-title">Bedsheets by size</p>
-									<div class="mobile-menu-tabs-content-item-grids">
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img1.webp" alt="mobile-menu-tab-img1.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">view all bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img2.webp" alt="mobile-menu-tab-img2.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">single bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img3.webp" alt="mobile-menu-tab-img3.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">queen bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img4.webp" alt="mobile-menu-tab-img4.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">king bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img5.webp" alt="mobile-menu-tab-img5.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">fitted bedsheets</span>
-										</a>
-									</div>
-								</div>
-								<div class="mobile-menu-tabs-content-item">
-									<p class="mobile-menu-tabs-content-item-title">More in Bedding</p>
-									<div class="mobile-menu-tabs-content-item-grids">
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img6.webp" alt="mobile-menu-tab-img6.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">premium pillow covers</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img1.webp" alt="mobile-menu-tab-img1.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">view all bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img2.webp" alt="mobile-menu-tab-img2.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">single bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img3.webp" alt="mobile-menu-tab-img3.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">queen bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img4.webp" alt="mobile-menu-tab-img4.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">king bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img5.webp" alt="mobile-menu-tab-img5.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">fitted bedsheets</span>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="mobile-menu-tabs-content" id="decor">
-							<div class="mobile-menu-tabs-content-heading">
-								<p class="title">Decor</p>
-								<span class="line"></span>
-							</div>
-							<div class="mobile-menu-tabs-content-items">
-								<div class="mobile-menu-tabs-content-item">
-									<p class="mobile-menu-tabs-content-item-title">Bedsheets by size</p>
-									<div class="mobile-menu-tabs-content-item-grids">
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img1.webp" alt="mobile-menu-tab-img1.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">view all bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img2.webp" alt="mobile-menu-tab-img2.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">single bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img3.webp" alt="mobile-menu-tab-img3.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">queen bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img4.webp" alt="mobile-menu-tab-img4.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">king bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img5.webp" alt="mobile-menu-tab-img5.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">fitted bedsheets</span>
-										</a>
-									</div>
-								</div>
-								<div class="mobile-menu-tabs-content-item">
-									<p class="mobile-menu-tabs-content-item-title">More in Bedding</p>
-									<div class="mobile-menu-tabs-content-item-grids">
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img6.webp" alt="mobile-menu-tab-img6.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">premium pillow covers</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img1.webp" alt="mobile-menu-tab-img1.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">view all bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img2.webp" alt="mobile-menu-tab-img2.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">single bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img3.webp" alt="mobile-menu-tab-img3.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">queen bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img4.webp" alt="mobile-menu-tab-img4.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">king bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img5.webp" alt="mobile-menu-tab-img5.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">fitted bedsheets</span>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="mobile-menu-tabs-content" id="dining">
-							<div class="mobile-menu-tabs-content-heading">
-								<p class="title">Dining</p>
-								<span class="line"></span>
-							</div>
-							<div class="mobile-menu-tabs-content-items">
-								<div class="mobile-menu-tabs-content-item">
-									<p class="mobile-menu-tabs-content-item-title">Bedsheets by size</p>
-									<div class="mobile-menu-tabs-content-item-grids">
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img1.webp" alt="mobile-menu-tab-img1.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">view all bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img2.webp" alt="mobile-menu-tab-img2.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">single bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img3.webp" alt="mobile-menu-tab-img3.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">queen bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img4.webp" alt="mobile-menu-tab-img4.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">king bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img5.webp" alt="mobile-menu-tab-img5.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">fitted bedsheets</span>
-										</a>
-									</div>
-								</div>
-								<div class="mobile-menu-tabs-content-item">
-									<p class="mobile-menu-tabs-content-item-title">More in Bedding</p>
-									<div class="mobile-menu-tabs-content-item-grids">
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img6.webp" alt="mobile-menu-tab-img6.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">premium pillow covers</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img1.webp" alt="mobile-menu-tab-img1.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">view all bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img2.webp" alt="mobile-menu-tab-img2.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">single bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img3.webp" alt="mobile-menu-tab-img3.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">queen bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img4.webp" alt="mobile-menu-tab-img4.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">king bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img5.webp" alt="mobile-menu-tab-img5.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">fitted bedsheets</span>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="mobile-menu-tabs-content" id="kitchen">
-							<div class="mobile-menu-tabs-content-heading">
-								<p class="title">Kitchen</p>
-								<span class="line"></span>
-							</div>
-							<div class="mobile-menu-tabs-content-items">
-								<div class="mobile-menu-tabs-content-item">
-									<p class="mobile-menu-tabs-content-item-title">Bedsheets by size</p>
-									<div class="mobile-menu-tabs-content-item-grids">
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img1.webp" alt="mobile-menu-tab-img1.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">view all bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img2.webp" alt="mobile-menu-tab-img2.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">single bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img3.webp" alt="mobile-menu-tab-img3.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">queen bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img4.webp" alt="mobile-menu-tab-img4.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">king bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img5.webp" alt="mobile-menu-tab-img5.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">fitted bedsheets</span>
-										</a>
-									</div>
-								</div>
-								<div class="mobile-menu-tabs-content-item">
-									<p class="mobile-menu-tabs-content-item-title">More in Bedding</p>
-									<div class="mobile-menu-tabs-content-item-grids">
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img6.webp" alt="mobile-menu-tab-img6.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">premium pillow covers</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img1.webp" alt="mobile-menu-tab-img1.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">view all bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img2.webp" alt="mobile-menu-tab-img2.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">single bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img3.webp" alt="mobile-menu-tab-img3.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">queen bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img4.webp" alt="mobile-menu-tab-img4.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">king bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img5.webp" alt="mobile-menu-tab-img5.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">fitted bedsheets</span>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="mobile-menu-tabs-content" id="bath">
-							<div class="mobile-menu-tabs-content-heading">
-								<p class="title">Bath</p>
-								<span class="line"></span>
-							</div>
-							<div class="mobile-menu-tabs-content-items">
-								<div class="mobile-menu-tabs-content-item">
-									<p class="mobile-menu-tabs-content-item-title">Bedsheets by size</p>
-									<div class="mobile-menu-tabs-content-item-grids">
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img1.webp" alt="mobile-menu-tab-img1.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">view all bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img2.webp" alt="mobile-menu-tab-img2.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">single bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img3.webp" alt="mobile-menu-tab-img3.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">queen bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img4.webp" alt="mobile-menu-tab-img4.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">king bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img5.webp" alt="mobile-menu-tab-img5.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">fitted bedsheets</span>
-										</a>
-									</div>
-								</div>
-								<div class="mobile-menu-tabs-content-item">
-									<p class="mobile-menu-tabs-content-item-title">More in Bedding</p>
-									<div class="mobile-menu-tabs-content-item-grids">
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img6.webp" alt="mobile-menu-tab-img6.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">premium pillow covers</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img1.webp" alt="mobile-menu-tab-img1.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">view all bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img2.webp" alt="mobile-menu-tab-img2.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">single bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img3.webp" alt="mobile-menu-tab-img3.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">queen bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img4.webp" alt="mobile-menu-tab-img4.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">king bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img5.webp" alt="mobile-menu-tab-img5.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">fitted bedsheets</span>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="mobile-menu-tabs-content" id="organisers">
-							<div class="mobile-menu-tabs-content-heading">
-								<p class="title">Organisers</p>
-								<span class="line"></span>
-							</div>
-							<div class="mobile-menu-tabs-content-items">
-								<div class="mobile-menu-tabs-content-item">
-									<p class="mobile-menu-tabs-content-item-title">Bedsheets by size</p>
-									<div class="mobile-menu-tabs-content-item-grids">
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img1.webp" alt="mobile-menu-tab-img1.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">view all bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img2.webp" alt="mobile-menu-tab-img2.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">single bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img3.webp" alt="mobile-menu-tab-img3.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">queen bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img4.webp" alt="mobile-menu-tab-img4.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">king bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img5.webp" alt="mobile-menu-tab-img5.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">fitted bedsheets</span>
-										</a>
-									</div>
-								</div>
-								<div class="mobile-menu-tabs-content-item">
-									<p class="mobile-menu-tabs-content-item-title">More in Bedding</p>
-									<div class="mobile-menu-tabs-content-item-grids">
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img6.webp" alt="mobile-menu-tab-img6.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">premium pillow covers</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img1.webp" alt="mobile-menu-tab-img1.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">view all bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img2.webp" alt="mobile-menu-tab-img2.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">single bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img3.webp" alt="mobile-menu-tab-img3.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">queen bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img4.webp" alt="mobile-menu-tab-img4.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">king bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img5.webp" alt="mobile-menu-tab-img5.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">fitted bedsheets</span>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="mobile-menu-tabs-content" id="gifts">
-							<div class="mobile-menu-tabs-content-heading">
-								<p class="title">Gifts</p>
-								<span class="line"></span>
-							</div>
-							<div class="mobile-menu-tabs-content-items">
-								<div class="mobile-menu-tabs-content-item">
-									<p class="mobile-menu-tabs-content-item-title">Bedsheets by size</p>
-									<div class="mobile-menu-tabs-content-item-grids">
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img1.webp" alt="mobile-menu-tab-img1.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">view all bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img2.webp" alt="mobile-menu-tab-img2.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">single bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img3.webp" alt="mobile-menu-tab-img3.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">queen bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img4.webp" alt="mobile-menu-tab-img4.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">king bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img5.webp" alt="mobile-menu-tab-img5.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">fitted bedsheets</span>
-										</a>
-									</div>
-								</div>
-								<div class="mobile-menu-tabs-content-item">
-									<p class="mobile-menu-tabs-content-item-title">More in Bedding</p>
-									<div class="mobile-menu-tabs-content-item-grids">
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img6.webp" alt="mobile-menu-tab-img6.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">premium pillow covers</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img1.webp" alt="mobile-menu-tab-img1.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">view all bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img2.webp" alt="mobile-menu-tab-img2.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">single bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img3.webp" alt="mobile-menu-tab-img3.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">queen bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img4.webp" alt="mobile-menu-tab-img4.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">king bedsheets</span>
-										</a>
-										<a href="#!" class="mobile-menu-tabs-content-item-grid">
-											<span class="mobile-menu-tabs-content-item-grid-img">
-												<img src="./assets/images/mobile-menu-tab-img5.webp" alt="mobile-menu-tab-img5.webp">
-											</span>
-											<span class="mobile-menu-tabs-content-item-grid-title">fitted bedsheets</span>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
+					<div class="mobile-nav-item">
+						<a href="product.html" class="mobile-nav-item-heading">
+							<p class="title">Product page</p>
+						</a>
+					</div>
+					<div class="mobile-nav-item">
+						<a href="about.html" class="mobile-nav-item-heading">
+							<p class="title">about page</p>
+						</a>
+					</div>
+					<div class="mobile-nav-item">
+						<a href="contact.html" class="mobile-nav-item-heading">
+							<p class="title">contact page</p>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -1951,7 +2029,7 @@
 			<span class="cart-drawer-close-window-btn"></span>
 			<div class="cart-drawer-inner">
 				<div class="cart-drawer-top">
-					<p class="cart-drawer-title">cart <span>(1 item)</span></p>
+					<p class="cart-drawer-title">cart <span>(2 items)</span></p>
 					<button class="cart-drawer-close-btn" type="button" aria-label="size chart drawer close"
 						title="cart-drawer-close-btn">
 						<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1962,41 +2040,60 @@
 					</button>
 				</div>
 				<div class="cart-drawer-progress">
-					<div class="cart-drawer-progress-content">
-						<span class="icon">
-							<svg xmlns="http://w3.org" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-								stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-								<polyline points="20 12 20 22 4 22 4 12"></polyline>
-								<rect x="2" y="7" width="20" height="5"></rect>
-								<line x1="12" y1="22" x2="12" y2="7"></line>
-								<path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
-								<path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
-							</svg>
-						</span>
-						<div class="content">
-							<p class="title">Get 500ml Mustard Oil</p>
-							<p class="text">Add <strong>৳1,400</strong> more to unlock!</p>
+					<div class="cart-drawer-progress-top">
+						<p class="cart-drawer-progress-offer-label">Limited Time Offer</p>
+						<div class="cart-drawer-progress-countdown" data-countdown-hours="1" data-countdown-minutes="30">
+							<span class="cart-drawer-progress-countdown-box"><span class="hrs">1</span>h</span>
+							<span class="sep">:</span>
+							<span class="cart-drawer-progress-countdown-box"><span class="mins">30</span>m</span>
+							<span class="sep">:</span>
+							<span class="cart-drawer-progress-countdown-box"><span class="secs">00</span>s</span>
 						</div>
 					</div>
-					<input type="range" value="60" min="0" max="100" step="1" class="progress">
+					<p class="cart-drawer-progress-message">
+						<span class="icon">🎁</span>
+						<span><strong>৳850.00</strong> away from FREE <strong>Vanity Pouch</strong> worth ৳799</span>
+					</p>
+					<div class="cart-drawer-progress-track-wrap">
+						<div class="cart-drawer-progress-track">
+							<div class="cart-drawer-progress-track-fill" style="width: 16.7%;"></div>
+						</div>
+					</div>
+					<div class="cart-drawer-progress-milestones">
+						<div class="cart-drawer-progress-milestone reached">
+							<span class="icon">🎁</span>
+							<p class="amount">৳2,499.00</p>
+							<p class="name">Vanity Pouch</p>
+						</div>
+						<div class="cart-drawer-progress-milestone">
+							<span class="icon">🎁</span>
+							<p class="amount">৳3,499.00</p>
+							<p class="name">Handmade Coaster</p>
+						</div>
+						<div class="cart-drawer-progress-milestone">
+							<span class="icon">🎁</span>
+							<p class="amount">৳4,999.00</p>
+							<p class="name">Tote Bag</p>
+						</div>
+					</div>
 				</div>
 				<div class="cart-drawer-content">
 					<div class="cart-drawer-items">
 						<div class="cart-drawer-item">
 							<div class="cart-drawer-item-img">
-								<img src="./assets/images/cart-drawer-img1.jpg" alt="card-drawer-img1">
+								<img src="./assets/images/product-img1.webp" alt="Taj Guldasta Office Backpack">
 							</div>
 							<div class="cart-drawer-item-content-wrap">
 								<div class="cart-drawer-item-content-inner">
 									<div class="cart-drawer-item-content">
-										<a href="#!" class="cart-drawer-item-title">Sundarban Honey 1kg</a>
+										<a href="#!" class="cart-drawer-item-title">Taj Guldasta Office Backpack</a>
 										<div class="content-btm">
 											<div class="cart-drawer-item-qty-btn-wrap">
 												<button class="cart-drawer-item-qty-btn">-</button>
 												<input type="text" class="cart-drawer-item-qty-input" value="1" readonly>
 												<button class="cart-drawer-item-qty-btn">+</button>
 											</div>
-											<p class="cart-drawer-item-price">tk700</p>
+											<p class="cart-drawer-item-price">৳1,870</p>
 										</div>
 									</div>
 								</div>
@@ -2013,19 +2110,19 @@
 						</div>
 						<div class="cart-drawer-item">
 							<div class="cart-drawer-item-img">
-								<img src="./assets/images/cart-drawer-img1.jpg" alt="card-drawer-img1">
+								<img src="./assets/images/product-img3.webp" alt="Rhea Kapoor Office Bag - Kashmir Blooms">
 							</div>
 							<div class="cart-drawer-item-content-wrap">
 								<div class="cart-drawer-item-content-inner">
 									<div class="cart-drawer-item-content">
-										<a href="#!" class="cart-drawer-item-title">Sundarban Honey 2kg</a>
+										<a href="#!" class="cart-drawer-item-title">Rhea Kapoor Office Bag - Kashmir Blooms</a>
 										<div class="content-btm">
 											<div class="cart-drawer-item-qty-btn-wrap">
 												<button class="cart-drawer-item-qty-btn">-</button>
 												<input type="text" class="cart-drawer-item-qty-input" value="1" readonly>
 												<button class="cart-drawer-item-qty-btn">+</button>
 											</div>
-											<p class="cart-drawer-item-price">tk1400</p>
+											<p class="cart-drawer-item-price">৳1,870</p>
 										</div>
 									</div>
 								</div>
@@ -2051,48 +2148,6 @@
 						</div>
 						<div class="swiper cart-drawer-slider">
 							<div class="swiper-wrapper">
-								<!-- <div class="swiper-slide">
-									<div class="cart-drawer-slider-item">
-										<div class="img">
-											<img src="./assets/images/cart-drawer-img1.jpg" alt="cart-drawer-img1.jpg">
-										</div>
-										<div class="content">
-											<a href="#!" class="title">Glarvest Black Rice 1 Kg</a>
-											<p class="price">৳200.00</p>
-											<button class="item-btn">
-												+ add
-											</button>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="cart-drawer-slider-item">
-										<div class="img">
-											<img src="./assets/images/cart-drawer-img1.jpg" alt="cart-drawer-img1.jpg">
-										</div>
-										<div class="content">
-											<a href="#!" class="title">Glarvest Black Rice 1 Kg</a>
-											<p class="price">৳200.00</p>
-											<button class="item-btn">
-												+ add
-											</button>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="cart-drawer-slider-item">
-										<div class="img">
-											<img src="./assets/images/cart-drawer-img1.jpg" alt="cart-drawer-img1.jpg">
-										</div>
-										<div class="content">
-											<a href="#!" class="title">Glarvest Black Rice 1 Kg</a>
-											<p class="price">৳200.00</p>
-											<button class="item-btn">
-												+ add
-											</button>
-										</div>
-									</div>
-								</div> -->
 								<div class="swiper-slide">
 									<div class="cart-drawer-slider-item">
 										<div class="product-card card_hover">
@@ -2110,22 +2165,22 @@
 												</div>
 												<div class="card-img">
 													<a class="main-img" href="product.html">
-														<img class="card_img" src="./assets/images/product-slider-img1.avif"
-															alt="product-slider-img1.avif">
+														<img class="card_img" src="./assets/images/product-img2.webp"
+															alt="FloMotif Women's Office Bag">
 													</a>
 													<a class="hover-img" href="product.html">
-														<img class="card_hover_img" src="./assets/images/product-slider-img2.avif"
-															alt="product-slider-img2.avif">
+														<img class="card_hover_img" src="./assets/images/product-img3.webp"
+															alt="FloMotif Women's Office Bag">
 													</a>
 												</div>
 											</div>
 											<div class="card-content">
 												<div class="card-title-wrap">
-													<a href="product.html" class="card-title">Orthotics Heel Protector</a>
+													<a href="product.html" class="card-title">FloMotif Women's Office Bag</a>
 												</div>
 												<div class="card-price-wrap">
-													<p class="latest-price">tk1870</p>
-													<p class="previous-price">tk2200</p>
+													<p class="latest-price">৳1,670</p>
+													<p class="previous-price">৳1,800</p>
 												</div>
 												<div class="card-btn">
 													<a href="#!" class="btn">add</a>
@@ -2151,22 +2206,22 @@
 												</div>
 												<div class="card-img">
 													<a class="main-img" href="product.html">
-														<img class="card_img" src="./assets/images/product-slider-img3.webp"
-															alt="product-slider-img3.webp">
+														<img class="card_img" src="./assets/images/product-img4.webp"
+															alt="Bidri Kaiser Statement Office Bag">
 													</a>
 													<a class="hover-img" href="product.html">
-														<img class="card_hover_img" src="./assets/images/product-slider-img4.webp"
-															alt="product-slider-img4.avif">
+														<img class="card_hover_img" src="./assets/images/product-img5.webp"
+															alt="Bidri Kaiser Statement Office Bag">
 													</a>
 												</div>
 											</div>
 											<div class="card-content">
 												<div class="card-title-wrap">
-													<a href="product.html" class="card-title">aviva Cloud Comfort Arch Support Slippers</a>
+													<a href="product.html" class="card-title">Bidri Kaiser Statement Office Bag</a>
 												</div>
 												<div class="card-price-wrap">
-													<p class="latest-price">tk1870</p>
-													<p class="previous-price">tk2200</p>
+													<p class="latest-price">৳1,070</p>
+													<p class="previous-price">৳1,200</p>
 												</div>
 												<div class="card-btn">
 													<a href="#!" class="btn">add</a>
@@ -2192,22 +2247,22 @@
 												</div>
 												<div class="card-img">
 													<a class="main-img" href="product.html">
-														<img class="card_img" src="./assets/images/product-slider-img5.webp"
-															alt="product-slider-img5.webp">
+														<img class="card_img" src="./assets/images/product-img5.webp"
+															alt="Ira Handbag - Lattice Lace">
 													</a>
 													<a class="hover-img" href="product.html">
-														<img class="card_hover_img" src="./assets/images/product-slider-img6.avif"
-															alt="product-slider-img6.avif">
+														<img class="card_hover_img" src="./assets/images/product-img6.webp"
+															alt="Ira Handbag - Lattice Lace">
 													</a>
 												</div>
 											</div>
 											<div class="card-content">
 												<div class="card-title-wrap">
-													<a href="product.html" class="card-title">aviva Men's Comfort Dual Strap Sandals</a>
+													<a href="product.html" class="card-title">Ira Handbag - Lattice Lace</a>
 												</div>
 												<div class="card-price-wrap">
-													<p class="latest-price">tk1870</p>
-													<p class="previous-price">tk2200</p>
+													<p class="latest-price">৳870</p>
+													<p class="previous-price">৳900</p>
 												</div>
 												<div class="card-btn">
 													<a href="#!" class="btn">add</a>
@@ -2233,22 +2288,22 @@
 												</div>
 												<div class="card-img">
 													<a class="main-img" href="product.html">
-														<img class="card_img" src="./assets/images/product-slider-img2.avif"
-															alt="product-slider-img2.avif">
+														<img class="card_img" src="./assets/images/product-img6.webp"
+															alt="FloMotif premium Office Bag">
 													</a>
 													<a class="hover-img" href="product.html">
-														<img class="card_hover_img" src="./assets/images/product-slider-img1.avif"
-															alt="product-slider-img1.avif">
+														<img class="card_hover_img" src="./assets/images/product-img1.webp"
+															alt="FloMotif premium Office Bag">
 													</a>
 												</div>
 											</div>
 											<div class="card-content">
 												<div class="card-title-wrap">
-													<a href="product.html" class="card-title">aviva Orthotics Posture Corrector Pro </a>
+													<a href="product.html" class="card-title">FloMotif premium Office Bag</a>
 												</div>
 												<div class="card-price-wrap">
-													<p class="latest-price">tk1870</p>
-													<p class="previous-price">tk2200</p>
+													<p class="latest-price">৳1,670</p>
+													<p class="previous-price">৳1,800</p>
 												</div>
 												<div class="card-btn">
 													<a href="#!" class="btn">add</a>
@@ -2279,85 +2334,6 @@
 			</div>
 		</div>
 		<!-- cart-drawer end -->
-
-		<!-- app-menu section start -->
-		<section class="app-menu-section">
-			<div class="app-menu-items">
-				<a href="#" class="app-menu-item">
-					<span class="icon">
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-							<g fill="#D55A3C">
-								<path
-									d="M6.902116402116404 9.2V-0.23650793650793567H9.03075396825397V9.2ZM3.9057539682539706 1.4853835978835983V-0.3720899470899468H12.027116402116404V1.4853835978835983Z" />
-								<path
-									d="M15.782738095238095 9.33558201058201Q14.874338624338625 9.33558201058201 14.16253306878307 8.888161375661376Q13.450727513227514 8.44074074074074 13.037202380952383 7.667923280423279Q12.62367724867725 6.89510582010582 12.62367724867725 5.905357142857143Q12.62367724867725 4.915608465608465 13.037202380952383 4.142791005291006Q13.450727513227514 3.3699735449735453 14.16253306878307 2.9225529100529104Q14.874338624338625 2.4751322751322755 15.782738095238095 2.4751322751322755Q16.447089947089946 2.4751322751322755 16.982638888888886 2.7327380952380955Q17.51818783068783 2.9903439153439155 17.857142857142854 3.444543650793651Q18.196097883597883 3.8987433862433862 18.236772486772487 4.481746031746032V7.328968253968254Q18.196097883597883 7.911970899470899 17.863921957671955 8.366170634920634Q17.53174603174603 8.82037037037037 16.989417989417987 9.077976190476189Q16.447089947089946 9.33558201058201 15.782738095238095 9.33558201058201ZM16.20304232804233 7.464550264550264Q16.86739417989418 7.464550264550264 17.274140211640212 7.02390873015873Q17.680886243386244 6.5832671957671955 17.680886243386244 5.905357142857143Q17.680886243386244 5.444378306878306 17.497850529100532 5.091865079365079Q17.314814814814817 4.739351851851852 16.98263888888889 4.542757936507937Q16.650462962962962 4.346164021164022 16.21660052910053 4.346164021164022Q15.782738095238095 4.346164021164022 15.45056216931217 4.542757936507937Q15.118386243386244 4.739351851851852 14.92179232804233 5.091865079365079Q14.725198412698413 5.444378306878306 14.725198412698413 5.905357142857143Q14.725198412698413 6.352777777777778 14.915013227513228 6.705291005291005Q15.104828042328043 7.057804232804232 15.44378306878307 7.261177248677248Q15.782738095238095 7.464550264550264 16.20304232804233 7.464550264550264ZM17.599537037037038 9.2V7.423875661375661L17.91137566137566 5.824007936507936L17.599537037037038 4.224140211640212V2.6107142857142867H19.633267195767196V9.2Z" />
-								<path
-									d="M1.3346560846560829 20.29047619047619 4.8849206349206336 15.823544973544974H7.59126984126984L4.041005291005289 20.29047619047619ZM1.3346560846560829 21.6V20.29047619047619L2.920634920634919 19.737566137566137H7.503968253968252V21.6ZM1.5965608465608447 16.391005291005293V14.528571428571428H7.59126984126984V15.823544973544974L6.019841269841268 16.391005291005293Z" />
-								<path
-									d="M11.738095238095237 21.745502645502647Q10.763227513227513 21.745502645502647 9.999338624338623 21.265343915343916Q9.235449735449734 20.785185185185185 8.791666666666664 19.955820105820106Q8.347883597883596 19.126455026455027 8.347883597883596 18.064285714285717Q8.347883597883596 17.002116402116403 8.791666666666664 16.172751322751324Q9.235449735449734 15.343386243386245 9.999338624338623 14.863227513227514Q10.763227513227513 14.383068783068783 11.738095238095237 14.383068783068783Q12.4510582010582 14.383068783068783 13.025793650793648 14.65952380952381Q13.6005291005291 14.935978835978837 13.964285714285714 15.4234126984127Q14.328042328042327 15.910846560846561 14.37169312169312 16.536507936507938V19.592063492063495Q14.328042328042327 20.21772486772487 13.971560846560845 20.70515873015873Q13.615079365079364 21.192592592592593 13.033068783068781 21.469047619047622Q12.4510582010582 21.745502645502647 11.738095238095237 21.745502645502647ZM12.189153439153438 19.737566137566137Q12.902116402116402 19.737566137566137 13.338624338624339 19.26468253968254Q13.775132275132275 18.791798941798945 13.775132275132275 18.064285714285717Q13.775132275132275 17.56957671957672 13.578703703703702 17.191269841269843Q13.382275132275131 16.812962962962963 13.025793650793648 16.601984126984128Q12.669312169312168 16.391005291005293 12.203703703703702 16.391005291005293Q11.738095238095237 16.391005291005293 11.381613756613756 16.601984126984128Q11.025132275132274 16.812962962962963 10.814153439153438 17.191269841269843Q10.603174603174603 17.56957671957672 10.603174603174603 18.064285714285717Q10.603174603174603 18.544444444444444 10.806878306878307 18.922751322751324Q11.01058201058201 19.301058201058204 11.374338624338623 19.519312169312173Q11.738095238095237 19.737566137566137 12.189153439153438 19.737566137566137ZM13.687830687830687 21.6V19.693915343915346L14.022486772486772 17.976984126984128L13.687830687830687 16.260052910052913V14.528571428571428H15.87037037037037V21.6Z" />
-								<path
-									d="M18.34391534391534 21.6V13.917460317460318Q18.34391534391534 13.05899470899471 18.729497354497354 12.367857142857144Q19.115079365079364 11.676719576719577 19.813492063492063 11.276587301587302Q20.51190476190476 10.876455026455027 21.47222222222222 10.876455026455027Q22.19973544973545 10.876455026455027 22.74537037037037 11.116534391534392Q23.29100529100529 11.356613756613758 23.698412698412696 11.77857142857143L22.3015873015873 13.175396825396826Q22.156084656084655 13.02989417989418 21.974206349206348 12.949867724867726Q21.79232804232804 12.86984126984127 21.544973544973544 12.86984126984127Q21.09391534391534 12.86984126984127 20.832010582010582 13.131746031746033Q20.57010582010582 13.393650793650794 20.57010582010582 13.844708994708995V21.6ZM16.787037037037035 16.42010582010582V14.528571428571428H22.607142857142858V16.42010582010582Z" />
-							</g>
-						</svg>
-					</span>
-					<p>home</p>
-				</a>
-				<button class="app-menu-item app-menu-open">
-					<span class="icon">
-						<svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
-							<path d="M8.33333 2.5H2.5V10H8.33333V2.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-								stroke-linejoin="round"></path>
-							<path d="M17.5 2.5H11.6667V6.66667H17.5V2.5Z" stroke="currentColor" stroke-width="1.5"
-								stroke-linecap="round" stroke-linejoin="round"></path>
-							<path d="M17.5 10H11.6667V17.5H17.5V10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-								stroke-linejoin="round"></path>
-							<path d="M8.33333 13.3333H2.5V17.5H8.33333V13.3333Z" stroke="currentColor" stroke-width="1.5"
-								stroke-linecap="round" stroke-linejoin="round"></path>
-						</svg>
-					</span>
-					<p>category</p>
-				</button>
-				<button class="app-menu-item navbar-search-open-btn">
-					<span class="icon">
-						<svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
-							<path
-								d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z"
-								stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-							<path d="M17.5 17.5L13.875 13.875" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-								stroke-linejoin="round"></path>
-						</svg>
-					</span>
-					<p>search</p>
-				</button>
-				<button class="app-menu-item cart-drawer-open">
-					<span class="cart-count">0</span>
-					<span class="icon">
-						<svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
-							<path
-								d="M0.833333 0.833333H4.16667L6.4 11.9917C6.4762 12.3753 6.68492 12.72 6.98962 12.9652C7.29432 13.2105 7.67558 13.3408 8.06667 13.3333H16.1667C16.5578 13.3408 16.939 13.2105 17.2437 12.9652C17.5484 12.72 17.7571 12.3753 17.8333 11.9917L19.1667 5H5"
-								stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-							<circle cx="7.49967" cy="17.5002" r="1.58333" stroke="currentColor" stroke-width="1.5"></circle>
-							<circle cx="16.6663" cy="17.5002" r="1.58333" stroke="currentColor" stroke-width="1.5"></circle>
-						</svg>
-					</span>
-					<p>cart</p>
-				</button>
-				<a class="app-menu-item">
-					<span class="icon">
-						<svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
-							<path
-								d="M16.6667 17.5V15.8333C16.6667 14.9493 16.3155 14.1014 15.6904 13.4763C15.0652 12.8512 14.2174 12.5 13.3333 12.5H6.66667C5.78261 12.5 4.93476 12.8512 4.30964 13.4763C3.68452 14.1014 3.33333 14.9493 3.33333 15.8333V17.5"
-								stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-							<path
-								d="M10 9.16667C11.8409 9.16667 13.3333 7.67428 13.3333 5.83333C13.3333 3.99238 11.8409 2.5 10 2.5C8.15905 2.5 6.66667 3.99238 6.66667 5.83333C6.66667 7.67428 8.15905 9.16667 10 9.16667Z"
-								stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-						</svg>
-					</span>
-					<p>account</p>
-				</a>
-			</div>
-		</section>
-		<!-- app-menu section end -->
 	</main>
 
 	<!-- footer start -->
@@ -2366,7 +2342,7 @@
 			<div class="footer-items">
 				<div class="footer-item">
 					<h2 class="footer-item-title">
-						<span>Bedroom Decor</span>
+						<span>Bags</span>
 						<span class="icon">
 							<span class="plus">+</span>
 							<span class="minus">-</span>
@@ -2374,18 +2350,18 @@
 					</h2>
 					<div class="footer-content">
 						<ul class="footer-list">
-							<li><a href="#!">All Bedding</a></li>
-							<li><a href="#!">Bedsheets</a></li>
-							<li><a href="#!">Comforters & AC Quilts</a></li>
-							<li><a href="#">Dohars, Razai & Blankets</a></li>
-							<li><a href="#">Duvet Covers</a></li>
-							<li><a href="#">Bedcovers</a></li>
+							<li><a href="#!">Office Bags</a></li>
+							<li><a href="#!">Sling Bags</a></li>
+							<li><a href="#!">Tote Bags</a></li>
+							<li><a href="#">Crossbody Bags</a></li>
+							<li><a href="#">Laptop Bags</a></li>
+							<li><a href="#">Statement Bags</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="footer-item">
 					<h2 class="footer-item-title">
-						<span>Living Room Decor</span>
+						<span>Backpacks</span>
 						<span class="icon">
 							<span class="plus">+</span>
 							<span class="minus">-</span>
@@ -2393,18 +2369,18 @@
 					</h2>
 					<div class="footer-content">
 						<ul class="footer-list">
-							<li><a href="#!">Cushion Fillers</a></li>
-							<li><a href="#!">Floor Cushions</a></li>
-							<li><a href="#!">Curtains</a></li>
-							<li><a href="#">Throws</a></li>
-							<li><a href="#">Diwan Sets</a></li>
-							<li><a href="#">Rugs & Carpets</a></li>
+							<li><a href="#!">Travel Backpacks</a></li>
+							<li><a href="#!">Laptop Backpacks</a></li>
+							<li><a href="#!">Mini Backpacks</a></li>
+							<li><a href="#">School Backpacks</a></li>
+							<li><a href="#">Office Backpacks</a></li>
+							<li><a href="#">Daypacks</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="footer-item">
 					<h2 class="footer-item-title">
-						<span>Home Decorations</span>
+						<span>Wallets & Travel</span>
 						<span class="icon">
 							<span class="plus">+</span>
 							<span class="minus">-</span>
@@ -2412,18 +2388,18 @@
 					</h2>
 					<div class="footer-content">
 						<ul class="footer-list">
-							<li><a href="#!">All Home Decor</a></li>
-							<li><a href="#!">Lamps & Lighting</a></li>
-							<li><a href="#!">Wall Decor</a></li>
-							<li><a href="#">Showpieces & Vases</a></li>
-							<li><a href="#">Artificial Flowers & Plants</a></li>
-							<li><a href="#">Clocks</a></li>
+							<li><a href="#!">Wallets</a></li>
+							<li><a href="#!">Cardholders</a></li>
+							<li><a href="#!">Travel Collection</a></li>
+							<li><a href="#">Duffle Bags</a></li>
+							<li><a href="#">Travel Pouches</a></li>
+							<li><a href="#">Passport Holders</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="footer-item">
 					<h2 class="footer-item-title">
-						<span>Kitchen Decor</span>
+						<span>Collections</span>
 						<span class="icon">
 							<span class="plus">+</span>
 							<span class="minus">-</span>
@@ -2431,12 +2407,12 @@
 					</h2>
 					<div class="footer-content">
 						<ul class="footer-list">
-							<li><a href="#!">All Kitchen & Dining</a></li>
-							<li><a href="#!">Serveware</a></li>
-							<li><a href="#!">Table Accessories</a></li>
-							<li><a href="#">Cookware & Bakeware</a></li>
-							<li><a href="#">Kitchen Tools</a></li>
-							<li><a href="#">Glassware</a></li>
+							<li><a href="#!">Zouk For Men</a></li>
+							<li><a href="#!">Z. By Zouk</a></li>
+							<li><a href="#!">New Arrivals</a></li>
+							<li><a href="#">Best Sellers</a></li>
+							<li><a href="#">Gift Shop</a></li>
+							<li><a href="#">Sale</a></li>
 						</ul>
 					</div>
 				</div>
@@ -2454,7 +2430,7 @@
 							<li><strong>phone:</strong><a href="#">1-833-428-8824</a></li>
 							<li><strong>Email:</strong><a href="#">info@aviva.com</a></li>
 							<li>
-								<p href="#">Open 24 Hours a Day, 7 Days a week</>
+								<p>Open 24 Hours a Day, 7 Days a week</p>
 							</li>
 						</ul>
 						<ul class="footer-icons">
