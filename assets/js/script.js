@@ -683,7 +683,7 @@ var swiper = new Swiper(".community-review-slider", {
   },
   breakpoints: {
     1: {
-      slidesPerView: 1.8,
+      slidesPerView: 1.7,
       spaceBetween: 10,
     },
     576: {
