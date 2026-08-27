@@ -90,7 +90,7 @@
     display: flex;
     align-items: center;
     gap: 2px;
-    color: #FF8A00;
+    color: var(--rating-star-color2);
 }
 
 .review-summary-btn .btn {

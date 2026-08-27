@@ -19,7 +19,7 @@
     padding: 0;
     position: relative;
     width: 100%;
-    background-color: #e8e3e1;
+    background-color: var(--border-color2);
 }
 
 .card-badge {

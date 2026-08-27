@@ -309,23 +309,23 @@
 }
 
 .filter-option.color-yellow label:before {
-    background-color: #FFD700;
+    background-color: var(--color-yellow);
 }
 
 .filter-option.color-white label:before {
-    background-color: #fff;
+    background-color: var(--white);
 }
 
 .filter-option.color-red label:before {
-    background-color: #FF0000;
+    background-color: var(--color-red);
 }
 
 .filter-option.color-blue label:before {
-    background-color: #0000ff;
+    background-color: var(--color-blue);
 }
 
 .filter-option.color-green label:before {
-    background-color: #008000;
+    background-color: var(--color-green);
 }
 
 .price-range-wrap {

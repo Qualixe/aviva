@@ -46,7 +46,7 @@
 }
 
 .product-rattings .icon svg {
-    color: #f57e20;
+    color: var(--rating-star-color);
     width: 20px;
     height: 20px;
 }

@@ -39,7 +39,7 @@
 }
 
 .gift-by-budget-item:hover .gift-by-budget-item-inner {
-    background: #0d3a40;
+    background: var(--brand-color-dark);
 }
 
 .gift-by-budget-label {
@@ -47,13 +47,13 @@
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #f5eecb;
+    color: var(--golden-bg);
 }
 
 .gift-by-budget-amount {
     font-size: 26px;
     font-weight: 700;
-    color: #f5eecb;
+    color: var(--golden-bg);
 }
 
 .gift-by-budget-explore {

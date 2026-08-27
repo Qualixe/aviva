@@ -23,7 +23,7 @@
     aspect-ratio: 3 / 4;
     border-radius: 12px;
     overflow: hidden;
-    background: linear-gradient(160deg, #f4622c, #de431d);
+    background: linear-gradient(160deg, var(--color-orange), var(--color-orange-dark));
 }
 
 .gift-by-inside-img img {
