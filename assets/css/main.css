@@ -30,18 +30,6 @@
     font-weight: 700;
 }
 
-@font-face {
-    font-family: 'Inter';
-    src: url('../fonts/Inter_18pt-ExtraBold.woff') format('woff');
-    font-weight: 800;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('../fonts/Inter_18pt-Black.woff') format('woff');
-    font-weight: 900;
-}
-
 /* colors */
 :root {
     /* color */
@@ -50,7 +38,6 @@
     --heading-text-color: #211913;
     --paragraph-text-color: #211913;
     --body-color: #fff;
-    --card-bg: #dcdcdc;
     --card-badge-bg: #008000;
     --btn-bg: transparent;
     --btn-color: #211913;
@@ -62,7 +49,6 @@
     --item-bg3: #f7fcfc;
     --muted: #6c6c6c;
     --color-green: #008000;
-    --color-pink: #bc406d;
     --gold-color: #c9a15a;
     --golden-bg: #f5eecb;
 
@@ -158,7 +144,6 @@ h6 {
 
 /* 16 → 18 */
 
-.p,
 p {
     font-size: 16px;
     font-weight: 400;
