@@ -2,13 +2,16 @@
 // smooth-scroll js start--
 (() => {
   const reduceMotion = window.matchMedia(
-    "(prefers-reduced-motion: reduce)",
+    "(prefers-reduced-motion: reduce)"
   ).matches;
+
   const canHover = window.matchMedia("(pointer: fine)").matches;
+
   if (reduceMotion || !canHover) return;
 
   const ease = 0.1;
-  const LINE_HEIGHT = 34; // px per "line" when a device reports DOM_DELTA_LINE
+  const LINE_HEIGHT = 34;
+
   let current = window.scrollY;
   let target = window.scrollY;
   let rafId = null;
@@ -16,18 +19,75 @@
   const maxScroll = () =>
     document.documentElement.scrollHeight - window.innerHeight;
 
-  // scroll-behavior:smooth (set on html/body for anchor jumps) intercepts
-  // plain scrollTo(x, y) calls and animates them natively — which stacks
-  // with our own easing below and makes the page fall further and further
-  // behind the cursor. behavior:"auto" forces an instant, exact jump each
-  // frame so our lerp is the only easing in effect.
   const jumpTo = (y) =>
-    window.scrollTo({ top: y, left: 0, behavior: "instant" });
+    window.scrollTo({
+      top: y,
+      left: 0,
+      behavior: "instant",
+    });
 
   const normalizeDelta = (e) => {
-    if (e.deltaMode === 1) return e.deltaY * LINE_HEIGHT; // DOM_DELTA_LINE
-    if (e.deltaMode === 2) return e.deltaY * window.innerHeight; // DOM_DELTA_PAGE
-    return e.deltaY; // DOM_DELTA_PIXEL
+    if (e.deltaMode === 1) return e.deltaY * LINE_HEIGHT;
+    if (e.deltaMode === 2) return e.deltaY * window.innerHeight;
+    return e.deltaY;
+  };
+
+  /*
+   * Check whether an element can handle this wheel movement
+   */
+  const canElementScroll = (element, deltaY) => {
+    if (!(element instanceof HTMLElement)) return false;
+
+    const style = window.getComputedStyle(element);
+
+    const overflowY = style.overflowY;
+
+    if (
+      overflowY !== "auto" &&
+      overflowY !== "scroll" &&
+      overflowY !== "overlay"
+    ) {
+      return false;
+    }
+
+    const hasVerticalOverflow =
+      element.scrollHeight > element.clientHeight;
+
+    if (!hasVerticalOverflow) return false;
+
+    const atTop = element.scrollTop <= 0;
+    const atBottom =
+      element.scrollTop + element.clientHeight >=
+      element.scrollHeight - 1;
+
+    // Scrolling UP
+    if (deltaY < 0 && !atTop) {
+      return true;
+    }
+
+    // Scrolling DOWN
+    if (deltaY > 0 && !atBottom) {
+      return true;
+    }
+
+    return false;
+  };
+
+  /*
+   * Find the closest scrollable parent
+   */
+  const isInsideScrollableElement = (target, deltaY) => {
+    let element = target;
+
+    while (element && element !== document.body) {
+      if (canElementScroll(element, deltaY)) {
+        return true;
+      }
+
+      element = element.parentElement;
+    }
+
+    return false;
   };
 
   const tick = () => {
@@ -45,32 +105,57 @@
   };
 
   const start = () => {
-    if (rafId === null) rafId = requestAnimationFrame(tick);
+    if (rafId === null) {
+      rafId = requestAnimationFrame(tick);
+    }
   };
 
   window.addEventListener(
     "wheel",
     (e) => {
-      if (document.body.classList.contains("active")) return;
-      if (e.ctrlKey) return; // let pinch-zoom through untouched
+      if (e.ctrlKey) return;
 
+      const deltaY = normalizeDelta(e);
+
+      /*
+       * IMPORTANT:
+       * If the mouse is over any internal scrollable element
+       * that can actually scroll in this direction,
+       * let the browser handle it naturally.
+       */
+      if (isInsideScrollableElement(e.target, deltaY)) {
+        return;
+      }
+
+      /*
+       * Otherwise use custom smooth page scrolling.
+       */
       e.preventDefault();
-      target += normalizeDelta(e);
-      target = Math.max(0, Math.min(target, maxScroll()));
+
+      target += deltaY;
+
+      target = Math.max(
+        0,
+        Math.min(target, maxScroll())
+      );
+
       start();
     },
-    { passive: false },
+    { passive: false }
   );
 
-  // Keep the eased scroll in sync with keyboard/scrollbar/anchor jumps
+  /*
+   * Keep custom scroll synchronized with native scrolling.
+   */
   window.addEventListener(
     "scroll",
     () => {
       if (rafId !== null) return;
+
       current = window.scrollY;
       target = window.scrollY;
     },
-    { passive: true },
+    { passive: true }
   );
 
   window.addEventListener("resize", () => {
@@ -528,40 +613,6 @@ var swiper = new Swiper(".card-slider", {
 });
 // card slider js end--
 
-// card slider js start--
-var swiper = new Swiper(".explore-slider", {
-  slidesPerView: 4.5,
-  centeredSlides: false,
-  spaceBetween: 10,
-  grabCursor: true,
-  loop: true,
-  speed: 500,
-  autoplay: false,
-  navigation: {
-    nextEl: ".explore-slider-button-next",
-    prevEl: ".explore-slider-button-prev",
-  },
-  breakpoints: {
-    1: {
-      slidesPerView: 2,
-      spaceBetween: 5,
-    },
-    576: {
-      slidesPerView: 2,
-      spaceBetween: 10,
-    },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 10,
-    },
-    993: {
-      slidesPerView: 4.5,
-      spaceBetween: 10,
-    },
-  },
-});
-// card slider js end--
-
 // image-category-slider js start--
 var swiper = new Swiper(".image-category-slider", {
   slidesPerView: 4,
@@ -619,34 +670,6 @@ var swiper = new Swiper(".featured-collection-slider", {
   },
 });
 // featured-collection-slider js end--
-
-// shop-by-brand-slider js start--
-var swiper = new Swiper(".shop-by-brand-slider", {
-  slidesPerView: 5,
-  spaceBetween: 0,
-  grabCursor: true,
-  loop: true,
-  speed: 800,
-  navigation: {
-    nextEl: ".shop-by-brand-slider .swiper-button-next",
-    prevEl: ".shop-by-brand-slider .swiper-button-prev",
-  },
-  breakpoints: {
-    1: {
-      slidesPerView: 2,
-    },
-    576: {
-      slidesPerView: 3,
-    },
-    768: {
-      slidesPerView: 4,
-    },
-    993: {
-      slidesPerView: 5,
-    },
-  },
-});
-// shop-by-brand-slider js end--
 
 // community-review-slider js start--
 var swiper = new Swiper(".community-review-slider", {
@@ -815,27 +838,6 @@ var swiper = new Swiper(".community-review-slider", {
   });
 })();
 // community-review popup js end--
-
-// collection-category-slider js start--
-var swiper = new Swiper(".collection-category-slider", {
-  slidesPerView: "auto",
-  spaceBetween: 20,
-  grabCursor: true,
-  loop: false,
-  navigation: {
-    nextEl: ".collection-category-button-next",
-    prevEl: ".collection-category-button-prev",
-  },
-  breakpoints: {
-    1: {
-      spaceBetween: 10,
-    },
-    576: {
-      spaceBetween: 20,
-    },
-  },
-});
-// collection-category-slider js end--
 
 // collection filter js start---
 document.addEventListener("DOMContentLoaded", () => {

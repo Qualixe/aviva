@@ -186,8 +186,12 @@
 
     /* product-card css start */
     .product-card .card-content .card-title {
-        font-size: 14px;
-        line-height: 17px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .card-footer {
+        gap: 12px;
     }
 
     .product-card .card-content .card-price-wrap {
@@ -195,7 +199,7 @@
     }
 
     .product-card .card-content .card-price-wrap .latest-price {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .product-card .card-content .card-price-wrap .previous-price {
@@ -208,7 +212,7 @@
 
     .card-btn .btn {
         width: 100%;
-        padding: 8px;
+        padding: 6px 15px;
         font-size: 12px;
     }
 

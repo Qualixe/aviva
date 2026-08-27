@@ -1137,6 +1137,10 @@ ul.drpodown-nav2 li:hover a {
 @media only screen and (max-width: 575px) {
 
     /* header css start */
+    .header .container {
+        padding: 0 16px;
+    }
+
     .navbar-logo {
         width: 100px;
     }
