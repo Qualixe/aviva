@@ -706,6 +706,62 @@ var swiper = new Swiper(".community-review-slider", {
 });
 // community-review-slider js end--
 
+// customer-review-slider js start--
+var swiper = new Swiper(".customer-review-slider", {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  loop: true,
+  rewind: true,
+  speed: 700,
+  direction: "vertical",
+  grabCursor: true,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".customer-review-pagination",
+    clickable: true,
+  },
+});
+
+// customer-review-slider also change on horizontal mouse/touch swipe
+(function () {
+  const el = document.querySelector(".customer-review-slider");
+  if (!el) return;
+
+  let startX = 0;
+  let startY = 0;
+  let dragging = false;
+
+  el.addEventListener("pointerdown", (e) => {
+    startX = e.clientX;
+    startY = e.clientY;
+    dragging = true;
+  });
+
+  el.addEventListener("pointerup", (e) => {
+    if (!dragging) return;
+    dragging = false;
+
+    const dx = e.clientX - startX;
+    const dy = e.clientY - startY;
+
+    if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) {
+      if (dx < 0) {
+        el.swiper.slideNext();
+      } else {
+        el.swiper.slidePrev();
+      }
+    }
+  });
+
+  el.addEventListener("pointercancel", () => {
+    dragging = false;
+  });
+})();
+// customer-review-slider js end--
+
 // community-review popup js start--
 (function () {
   const items = document.querySelectorAll(".community-review-item");

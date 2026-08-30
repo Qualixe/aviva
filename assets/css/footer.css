@@ -1,6 +1,6 @@
 /* footer-section css start */
 .footer {
-    background-color: var(--item-bg3);
+    background-color: var(--footer-bg);
 }
 
 .footer.product-page-footer {
@@ -10,6 +10,7 @@
 .footer-items {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 24px;
     padding: 50px 0;
 }
@@ -18,8 +19,22 @@
     width: fit-content;
 }
 
-.footer-item:last-child {
-    max-width: 350px;
+.footer-item.footer-info {
+    width: 100%;
+    max-width: 320px;
+}
+
+.footer-item.footer-brand-links {
+    max-width: 200px;
+}
+
+.footer-item.footer-useful {
+    max-width: 260px;
+}
+
+.footer-item.footer-newsletter-col {
+    width: 100%;
+    max-width: 300px;
 }
 
 .footer-content-inner {
@@ -33,7 +48,7 @@
 .footer-item-title {
     font-size: 16px;
     margin: 0 0 16px 0;
-    color: var(--paragraph-text-color);
+    color: var(--white);
     text-transform: capitalize;
     font-weight: 600;
 }
@@ -51,6 +66,7 @@
 
 .footer-list li strong {
     text-transform: capitalize;
+    color: var(--white);
 }
 
 .footer-list li:last-child {
@@ -59,7 +75,7 @@
 
 .footer-list li a,
 .footer-list li p {
-    color: var(--paragraph-text-color);
+    color: rgba(255, 255, 255, 0.85);
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -68,12 +84,31 @@
 
 .footer-list li a:hover {
     text-decoration: underline;
-    color: var(--brand-color);
+    color: var(--white);
 }
 
 .footer-list li i {
-    color: var(--paragraph-text-color);
+    color: rgba(255, 255, 255, 0.85);
     font-size: 12px;
+}
+
+.footer-about-text {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0 0 16px 0;
+}
+
+.footer-about-text a {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+.footer-sub-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--white);
+    margin: 0 0 12px 0;
 }
 
 .footer-icons {
@@ -86,7 +121,7 @@
 .footer-icons li a {
     width: 34px;
     height: 34px;
-    border: 1px solid var(--border-color2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,7 +131,7 @@
 }
 
 .footer-icons li a:hover {
-    background-color: var(--brand-color);
+    background-color: var(--white);
 }
 
 .footer-icons li a svg {
@@ -106,17 +141,82 @@
 }
 
 .footer-icons li a svg path {
-    fill: var(--brand-color);
+    fill: var(--white);
     transition: ease .3s;
 }
 
 .footer-icons li a:hover svg path {
-    fill: var(--white);
+    fill: var(--brand-color);
+}
+
+.footer-newsletter p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0 0 16px 0;
+}
+
+.footer-newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-newsletter-input {
+    width: 100%;
+    height: 44px;
+    padding: 0 14px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    background: transparent;
+    color: var(--white);
+    font-size: 14px;
+}
+
+.footer-newsletter-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-newsletter-btn {
+    height: 44px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 4px;
+    background: var(--brand-color-dark);
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+.footer-newsletter-btn:hover {
+    background: var(--black);
+}
+
+.footer-description {
+    padding: 0 0 40px 0;
+    text-align: left;
+    max-width: 1376px;
+    margin: 0 auto;
+}
+
+.footer-description p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 0 4px 0;
+}
+
+.footer-description p:last-child {
+    margin-bottom: 0;
 }
 
 .copyright-area {
     padding: 20px 0;
-    border-top: 1px solid var(--border-color2);
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .copyright-content {
@@ -128,7 +228,7 @@
 
 .copyright-text,
 .copyright-text a {
-    color: var(--paragraph-text-color);
+    color: rgba(255, 255, 255, 0.85);
     font-size: 14px;
 }
 
@@ -139,7 +239,7 @@
 }
 
 .copyright-link {
-    color: var(--paragraph-text-color);
+    color: rgba(255, 255, 255, 0.85);
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
@@ -149,6 +249,7 @@
 
 .copyright-link:hover {
     text-decoration: underline;
+    color: var(--white);
 }
 
 /* footer-section css end */
@@ -157,7 +258,7 @@
 
     /* footer-section css start */
     .footer {
-        border-top: 1px solid var(--border-color2);
+        border-top: 1px solid rgba(255, 255, 255, 0.25);
     }
 
     .footer.product-page-footer {
@@ -178,10 +279,18 @@
 
     .footer-item {
         width: 100%;
+        max-width: 100%;
     }
 
-    .footer-item:last-child {
+    .footer-item.footer-info,
+    .footer-item.footer-brand-links,
+    .footer-item.footer-useful,
+    .footer-item.footer-newsletter-col {
         max-width: 100%;
+    }
+
+    .footer-item.footer-info {
+        padding: 16px;
     }
 
     .footer-item-title {
@@ -191,7 +300,7 @@
         padding: 16px;
         gap: 10px;
         width: 100%;
-        border-bottom: 1px solid var(--border-color2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
         margin: 0;
     }
 
@@ -203,7 +312,7 @@
         font-size: 20px;
         font-weight: 400;
         line-height: 1;
-        border-left: 1px solid var(--border-color2);
+        border-left: 1px solid rgba(255, 255, 255, 0.25);
         width: 26px;
     }
 
@@ -235,7 +344,7 @@
         max-height: 0;
         opacity: 0;
         transition: max-height 0.4s ease, opacity 0.25s ease, padding 0.25s ease;
-        border-bottom: 1px solid var(--border-color2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
     }
 
     .footer-item.active .footer-content {
@@ -243,7 +352,8 @@
     }
 
     .footer-content-inner,
-    .footer-list {
+    .footer-list,
+    .footer-newsletter {
         padding: 16px;
     }
 
@@ -251,9 +361,15 @@
         margin: 0 0 10px 0;
     }
 
-    .footer-icons {
+    .footer-item.footer-info .footer-icons {
         margin: 0;
-        padding: 0 16px 16px;
+        padding: 0;
+    }
+
+    .footer-description {
+        margin: 24px auto 0;
+        padding: 0 16px 32px;
+        text-align: center;
     }
 
     .copyright-area {

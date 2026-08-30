@@ -1,6 +1,7 @@
 /* single-banner css start */
 .single-banner-section {
     padding: 20px 0;
+    background: var(--white);
 }
 
 .single-banner-wrap{

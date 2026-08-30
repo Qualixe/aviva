@@ -29,7 +29,7 @@
     position: sticky;
     top: 140px;
     z-index: 6;
-    background: var(--white);
+    background: var(--section-bg);
     padding: 20px 0;
     border-bottom: 1px solid var(--border-color);
 }

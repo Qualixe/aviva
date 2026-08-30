@@ -1,8 +1,4 @@
 /* card-slider-section css start */
-.card-slider-section.section-bg {
-    background: var(--item-bg3);
-}
-
 .card-slider-section .section-heading-wrapper {
     max-width: 100%;
     display: flex;

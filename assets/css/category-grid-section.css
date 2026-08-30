@@ -1,10 +1,12 @@
 /* category-grid-section css start */
 .category-grid-section {
     padding: 24px 0;
+    background: var(--white);
 }
 
 .swiper.category-grid-slider {
-    padding-bottom: 4px;
+    padding: 4px;
+
 }
 
 .swiper.category-grid-slider .swiper-slide{
@@ -12,11 +14,16 @@
 }
 
 .category-grid-item {
-    background-color: var(--item-bg);
+    background-color: var(--white);
     border-radius: 8px;
     overflow: hidden;
     display: block;
     height: 100%;
+    box-shadow: 0 2px 4px rgb(34 34 34 / 10%);
+}
+
+.category-grid-item .img {
+   overflow: hidden;
 }
 
 .category-grid-item .img img {
@@ -25,7 +32,7 @@
 }
 
 .category-grid-item:hover .img img {
-    transform: scale(1.5);
+    transform: scale(1.1);
 }
 
 .category-grid-item .content {
@@ -37,8 +44,8 @@
 }
 
 .category-grid-item .content .title {
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 500;
     text-transform: capitalize;
     transition: all ease .3s;
 }
@@ -58,8 +65,8 @@
 }
 
 .category-grid-item .content .icon svg {
-    width: 28px;
-    height: 28px;
+    width: 20px;
+    height: 20px;
     display: block;
     transform: rotate(180deg);
 }
@@ -78,7 +85,7 @@
     }
 
     .swiper.category-grid-slider {
-        padding: 0 20px 4px;
+        padding: 4px 20px 4px;
     }
 
     /* category-grid-section css end */
@@ -93,8 +100,8 @@
     }
 
     .category-grid-item .content .icon svg {
-        width: 20px;
-        height: 20px;
+        width: 16px;
+        height: 16px;
     }
 
     /* category-grid-section css end */
@@ -115,12 +122,8 @@
         padding: 0 16px;
     }
 
-    .category-grid-title {
-        font-size: 18px;
-    }
-
     .swiper.category-grid-slider {
-        padding: 0 16px 4px;
+        padding: 4px 16px 4px;
     }
 
     /* category-grid-section css end */

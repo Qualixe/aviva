@@ -1,6 +1,7 @@
 /* featured-collection-section css start */
 .featured-collection-section {
     padding: 24px 0;
+    background: var(--white);
 }
 
 .featured-collection-eyebrow {
